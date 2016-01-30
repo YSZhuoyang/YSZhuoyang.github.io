@@ -19,7 +19,7 @@
 
 <body>
 
-    <div class="navbar-wrapper">
+    <!--<div class="navbar-wrapper">
         <div class="container">
 
             <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0px;">
@@ -44,7 +44,10 @@
             </nav>
 
         </div>
-    </div>
+    </div>-->
+
+    <!-- My navbar HTML include goes here. -->
+    <div class="navbar-wrapper" id = "myNavBar"></div>
 
     <div id="page-wrap">
     
@@ -146,6 +149,15 @@
         <div class="clear"></div>
     
     </div>
+
+    <script src="../js/jquery-2.2.0.min.js"></script>
+    <script>
+        // Load navbar
+        $(function(){
+          $("#myNavBar").load("../bootstrap-slider.html"); 
+        });
+    </script>
+
 
 </body>
 

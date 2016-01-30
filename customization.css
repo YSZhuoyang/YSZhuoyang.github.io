@@ -1,5 +1,16 @@
 <style>
     
+    body {
+        /*background-image: url("img/background.jpg") !important;*/
+    }
+
+    @media all and (max-width: 768px) {
+        .navbar-wrapper {
+            position: relative !important;
+            top: 0px !important;
+        }
+    }
+
     #video {
         margin-top:50px;
     }
