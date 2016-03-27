@@ -19,6 +19,10 @@
         margin-top:50px;
     }
 
+    .featurette-divider {
+        border-color: #c9c9c9;
+    }
+
     .flip {
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
