@@ -6,6 +6,12 @@
         }
     }
 
+    @media only screen and (max-width: 800px) {
+        .container.marketing {
+            font-size:50%;
+        }
+    }
+
     #project_video {
         margin-top:50px;
         width:500px;
