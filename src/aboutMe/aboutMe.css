@@ -1,8 +1,12 @@
 
 .clear {
     clear: both;
+    float: none;
+    margin: 0;
+    height: 15px;
+    width: 800px;
     padding-top: 20px;
-    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
 }
 
 #page-wrap {
@@ -86,13 +90,5 @@ dt {
 dd {
     width: 600px;
     float: right;
-}
-
-dd.clear {
-    float: none;
-    margin: 0;
-    height: 15px;
-    width: 800px;
-    border-top: 1px solid #999;
 }
 

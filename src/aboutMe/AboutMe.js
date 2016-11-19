@@ -145,24 +145,21 @@ export default class AboutMe extends React.Component {
                         
                     </p>
                 </div>
-                
                 <div className="clear"></div>
-                
                 <dl>
                     <dd/>
+                    <ul/>
                     {this.renderSkills()}
-                    
                     <div className="clear"></div>
-                    
+                    <ul/>
                     {this.renderExp()}
-
                     <div className="clear"></div>
-
                     <dd/>
+                    <ul/>
                     {this.renderEducation()}
                     <dd/>
-
                     <div className="clear"></div>
+                    <ul/>
                     {this.renderInterests()}
                 </dl>
             </div>

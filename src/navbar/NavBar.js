@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link } from 'react-router';
+//import { Link } from 'react-router';
 import SwipeViews from 'react-swipe-views';
 import AboutMe from '../aboutMe/AboutMe.js';
 //import Proj from '../projects/Proj.js';
@@ -12,14 +12,14 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <SwipeViews>
-        <div title={<Link id="tab" to="my-work">My Work</Link>}>
+        <div title={<em id="tab">My Work</em>}>
           <p>Tab 1 content.</p>
           <div id="my-work" />
         </div>
-        <div title={<Link id="tab" to="about-me">About Me</Link>}>
+        <div title={<em id="tab">About Me</em>}>
           <AboutMe />
         </div>
-        <div title={<Link id="tab" to="my-trace">My Trace</Link>}>
+        <div title={<em id="tab">My Trace</em>}>
           <p>Tab 3 content.</p>
           <div id="my-trace" />
         </div>
