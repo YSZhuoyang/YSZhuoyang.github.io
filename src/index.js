@@ -15,3 +15,4 @@ ReactDOM.render(
   <NavBar />, 
   document.getElementById('swipe-view-navbar')
 );
+

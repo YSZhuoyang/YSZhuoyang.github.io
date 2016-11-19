@@ -2,16 +2,14 @@
 import React from 'react';
 import Bootstrap from 'bootstrap';
 
-//import './bootstrap.min.js';
-
 import './bootstrap.min.css';
-import './customization.css';
+import './index.css';
 
 export default class Proj extends React.Component {
   render() {
     return (
       <Projects>
-            <div class="row featurette">
+        <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading"> <a href="https://github.com/YSZhuoyang/Green_Space" target="_blank" rel="nofollow">Green space</a> </h2>
                 <p class="lead" style="font-size:140%">A design aid tool that performs plant landscaping with trees and shrubs.<br></br>
