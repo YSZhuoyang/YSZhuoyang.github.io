@@ -138,7 +138,7 @@ export default class AboutMe extends React.Component {
                     <h1 className="fn">Oscar Yu</h1>
                     {this.renderEmail()}
                 </div>
-                        
+                
                 <div id="objective">
                     <p>
                         

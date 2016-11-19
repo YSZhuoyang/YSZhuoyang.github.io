@@ -29,7 +29,7 @@ class Slider extends Component {
       showPlayButton: false,
       showGalleryPlayButton: false,
       showNav: true,
-      slideInterval: 2500,
+      slideInterval: 5000,
       showVideo: {},
     };
   }

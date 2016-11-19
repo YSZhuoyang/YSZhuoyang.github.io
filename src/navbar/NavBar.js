@@ -1,29 +1,25 @@
 
 import React from 'react';
-//import { Link } from 'react-router';
 import SwipeViews from 'react-swipe-views';
 import AboutMe from '../aboutMe/AboutMe.js';
-//import Proj from '../projects/Proj.js';
+import Proj from '../projects/Proj.js';
 
 import 'react-swipe-views/lib/react-swipe-views.css';
 import './navbar.css';
 
-export default class NavBar extends React.Component {
-  render() {
-    return (
-      <SwipeViews>
+const NavBar = () => (
+    <SwipeViews>
         <div title={<em id="tab">My Work</em>}>
-          <p>Tab 1 content.</p>
-          <div id="my-work" />
+            <Proj />
         </div>
         <div title={<em id="tab">About Me</em>}>
-          <AboutMe />
+            <AboutMe />
         </div>
         <div title={<em id="tab">My Trace</em>}>
-          <p>Tab 3 content.</p>
-          <div id="my-trace" />
+            <p>Tab 3 content.</p>
+            <div id="my-trace" />
         </div>
-      </SwipeViews>
-    );
-  }
-}
+    </SwipeViews>
+);
+
+export default NavBar;
