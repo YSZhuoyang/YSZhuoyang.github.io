@@ -132,7 +132,7 @@ export default class AboutMe extends React.Component {
     
     render() {
         return (
-            <div id="page-wrap">
+            <div id="about-me">
                 {this.renderIDPhoto()}
                 <div id="contact-info" className="vcard">
                     <h1 className="fn">Oscar Yu</h1>

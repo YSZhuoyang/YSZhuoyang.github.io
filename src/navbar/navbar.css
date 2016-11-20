@@ -1,7 +1,11 @@
 
-
-
 #tab {
     font-style: italic;
     font-size: 30px;
+}
+
+@media all and (max-width: 768px) {
+    #tab {
+        font-size:130%;
+    }
 }

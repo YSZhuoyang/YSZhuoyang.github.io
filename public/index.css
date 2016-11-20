@@ -1,0 +1,18 @@
+
+.tab-body {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+}
+
+@media all and (max-width: 768px) {
+    .tab-body {
+        font-size:70%;
+    }
+}
+
+body {
+    background-image: url("img/noise.jpg");
+}
