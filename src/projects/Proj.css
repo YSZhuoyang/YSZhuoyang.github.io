@@ -3,14 +3,14 @@
     /* Add shadows to create the "card" effect */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
     transition: 0.2s ease-in-out;
-    width: 400px;
-    height: 330px;
+    width: 350px;
+    height: 300px;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-    transform: scale(1.5, 1.5);
+    transform: scale(1.2, 1.2) !important;
 }
 
 /* Add some padding inside the card container */

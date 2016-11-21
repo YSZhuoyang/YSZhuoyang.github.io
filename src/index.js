@@ -4,12 +4,26 @@ import ReactDOM from 'react-dom';
 import Slider from './slider/Slider';
 import NavBar from './navbar/NavBar';
 
-ReactDOM.render(
-  <NavBar />, 
-  document.getElementById('swipe-view-navbar')
+import '../public/index.css';
+
+
+const Body = () => (
+    <div>
+        <div id="overlay" />
+        <Slider />
+
+        <div className="tab-body">
+            <NavBar />
+            
+            <footer>
+                <p className="pull-right"><a href="#">Back to top</a></p>
+            </footer>
+        </div>
+    </div>
 );
 
 ReactDOM.render(
-  <Slider />, 
-  document.getElementById('img-gallery-slider')
+  <Body />, 
+  document.getElementById('my-body')
 );
+
