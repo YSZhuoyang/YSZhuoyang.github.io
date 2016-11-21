@@ -69,8 +69,8 @@ export default class Proj extends React.Component {
                     brief: 'It aims to give a direct view of' + 
                         '‘what is a silly password’ and ‘what is a good password’.' + 
                         ' A data visualization website was established, where' + 
-                        ' a set of interactive diagrams were implemented with D3 Javascript' + 
-                        ' library for analyzing and demonstrating characteristics' +
+                        ' a set of interactive diagrams were implemented with D3 ' + 
+                        ' Javascript library for demonstrating features of password' +
                         ' (e.g. length, type of characters used, frequencies' +
                         ' of letter combinations and etc)',
                     imgPath: './img/pass.png',
