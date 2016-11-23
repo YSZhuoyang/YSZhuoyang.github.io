@@ -1,59 +1,75 @@
 
 import React from 'react';
-import ToolTip from 'react-portal-tooltip';
+import Dialog from 'material-ui/Dialog';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import './Proj.css';
 
 
+injectTapEventPlugin();
+
 class ProjCard extends React.Component {
     
     state = {
-        isTooltipActive: false
+        open: false,
+    };
+
+    static childContextTypes = {
+        muiTheme: React.PropTypes.object
     }
 
-    showTooltip() {
-        this.setState({isTooltipActive: true})
+    getChildContext() {
+        return {
+            muiTheme: getMuiTheme()
+        }
     }
-    
-    hideTooltip() {
-        this.setState({isTooltipActive: false})
+
+    handleOpen = () => {
+        this.setState({open: true});
+    };
+
+    handleClose = () => {
+        this.setState({open: false});
+    };
+
+    renderContent() {
+        return(
+            <Dialog
+            title={this.props.mycontents.title}
+            modal={false}
+            open={this.state.open}
+            onRequestClose={this.handleClose}
+            >
+                <div>
+                    <iframe id="project_video" 
+                    src={this.props.mycontents.video}
+                    frameBorder="0" allowFullScreen>
+                    </iframe>
+                </div>
+                <div id="proj-brief-text">
+                    <br />
+                    {this.props.mycontents.brief}
+                    <br /><br />
+                </div>
+                <a id="source-link" href={this.props.mycontents.href}>Source</a>
+            </Dialog>
+        );
     }
     
     render() {
-        const tipStyle = {
-            style: {
-                padding: 20,
-                boxShadow: '5px 5px 3px rgba(1,1,1,.5)',
-                width: 400
-            },
-            arrowStyle: {
-                color: 'rgba(1, 1, 1, .3)',
-                borderColor: false
-            }
-        };
-
         return (
-            <a href={this.props.mycontents.href}>
             <div>
                 <div style={this.props.mystyle} className="card"
                 id={this.props.myid}
-                onMouseEnter={this.showTooltip.bind(this)}
-                onMouseLeave={this.hideTooltip.bind(this)}>
+                onTouchTap={this.handleOpen}>
                     <img src={this.props.mycontents.imgPath} alt="Avatar" />
                     <div className="desc">
                         <h4><b>{this.props.mycontents.title}</b></h4>
                     </div>
                 </div>
-
-                <ToolTip active={this.state.isTooltipActive}
-                position="top" arrow="center" style={tipStyle}
-                parent={'#' + this.props.myid}>
-                    <div>
-                        <p>{this.props.mycontents.brief}</p>
-                    </div>
-                </ToolTip>
+                {this.renderContent()}
             </div>
-            </a>
         )
     }
 }
@@ -75,6 +91,7 @@ export default class Proj extends React.Component {
                         ' of letter combinations and etc)',
                     imgPath: './img/pass.png',
                     href: '',
+                    video: '',
                     randTop: Math.floor(Math.random() * 400 + 20),
                     randLeft: Math.floor(Math.random() * 600),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
@@ -95,6 +112,7 @@ export default class Proj extends React.Component {
                         'effects.',
                     imgPath: './img/pass.png',
                     href: 'https://github.com/YSZhuoyang/Green-Space-Plant-Landscaping',
+                    video: 'https://www.youtube.com/embed/7JP8YgwPKTw?rel=0',
                     randTop: Math.floor(Math.random() * 400 + 20),
                     randLeft: Math.floor(Math.random() * 600),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
@@ -115,7 +133,8 @@ export default class Proj extends React.Component {
             title: this.state.pos[0].title,
             brief: this.state.pos[0].brief,
             imgPath: this.state.pos[0].imgPath,
-            href: this.state.pos[0].href
+            href: this.state.pos[0].href,
+            video: this.state.pos[0].video
         }
 
         return(
@@ -135,7 +154,8 @@ export default class Proj extends React.Component {
             title: this.state.pos[1].title,
             brief: this.state.pos[1].brief,
             imgPath: this.state.pos[1].imgPath,
-            href: this.state.pos[1].href
+            href: this.state.pos[1].href,
+            video: this.state.pos[1].video
         }
 
         return(

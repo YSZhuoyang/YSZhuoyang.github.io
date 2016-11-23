@@ -23,3 +23,33 @@
     height: 70%;
 }
 
+#source-link {
+    font-size: 130%;
+    font-style: oblique;
+    color: #0000FF;
+}
+
+#proj-brief-text {
+    color: #222222;
+}
+
+#project_video {
+    margin-top:50px;
+    width:500px;
+    height:250px;
+    min-width:20%;
+    max-width:100%;
+    min-height:20%;
+    max-height:100%;
+    margin: 0 auto;
+    display:block;
+}
+
+#project_image {
+    margin-top:50px;
+    min-width:20%;
+    max-width:100%;
+    min-height:20%;
+    max-height:100%;
+    overflow:hidden;
+}
