@@ -69,8 +69,12 @@ class ProjCard extends React.Component {
                 id={this.props.myid}
                 onTouchTap={this.handleOpen}>
                     <img src={this.props.mycontents.imgPath} alt="Avatar" />
-                    <div className="desc">
+                    <div className="overlay" />
+                    <div className="title">
                         <h4><b>{this.props.mycontents.title}</b></h4>
+                    </div>
+                    <div className="subtitle">
+                        <h4><b>{this.props.mycontents.subtitle}</b></h4>
                     </div>
                 </div>
                 {this.renderContent()}
@@ -87,6 +91,7 @@ export default class Proj extends React.Component {
             pos: [
                 {
                     title: 'Password security',
+                    subtitle: 'Javascript, D3',
                     brief: 'It aims to give a direct view of' + 
                         '‘what is a silly password’ and ‘what is a good password’.' + 
                         ' A data visualization website was established, where' + 
@@ -103,6 +108,7 @@ export default class Proj extends React.Component {
                 }, 
                 {
                     title: 'Green space',
+                    subtitle: 'Java, OpenGL',
                     brief: 'A design aid tool that performs plant ' + 
                         'landscaping with trees and shrubs.' +
                         'The idea is to replace paper drawings with a' + 
@@ -136,6 +142,7 @@ export default class Proj extends React.Component {
 
         const contents = {
             title: this.state.pos[0].title,
+            subtitle: this.state.pos[0].subtitle,
             brief: this.state.pos[0].brief,
             imgPath: this.state.pos[0].imgPath,
             href: this.state.pos[0].href,
@@ -157,6 +164,7 @@ export default class Proj extends React.Component {
 
         const contents = {
             title: this.state.pos[1].title,
+            subtitle: this.state.pos[1].subtitle,
             brief: this.state.pos[1].brief,
             imgPath: this.state.pos[1].imgPath,
             href: this.state.pos[1].href,
