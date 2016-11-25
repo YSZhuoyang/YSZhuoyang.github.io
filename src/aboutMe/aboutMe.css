@@ -83,7 +83,7 @@ ul {
 }
     
 dt {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 0;
     font-style: italic;
     font-weight: bold;
     font-size: 150%;

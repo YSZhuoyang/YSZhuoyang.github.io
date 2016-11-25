@@ -111,8 +111,8 @@ export default class Proj extends React.Component {
                     imgPath: './img/pass.png',
                     href: '',
                     video: '',
-                    randTop: Math.floor(Math.random() * 400 + 20),
-                    randLeft: Math.floor(Math.random() * 600),
+                    randTop: Math.floor(Math.random() * 100 + 20),
+                    randLeft: Math.floor(Math.random() * 100 + 20),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 }, 
                 {
@@ -133,63 +133,123 @@ export default class Proj extends React.Component {
                     imgPath: './img/green_space.PNG',
                     href: 'https://github.com/YSZhuoyang/Green-Space-Plant-Landscaping',
                     video: 'https://www.youtube.com/embed/7JP8YgwPKTw?rel=0',
-                    randTop: Math.floor(Math.random() * 400 + 20),
-                    randLeft: Math.floor(Math.random() * 600),
+                    randTop: Math.floor(Math.random() * 100 + 20),
+                    randLeft: Math.floor(Math.random() * 100 + 365),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
+                },
+                {
+                    title: 'News digest',
+                    subtitle: 'Ruby on rails, bootstrap',
+                    brief: 'A news feeds website where users are able to read ' +
+                        'news articles scrapped from multiple news sources (e.g. ' +
+                        'New York Times, The Age, ABC News), and subscribe based on ' +
+                        'their interests. Scrapped news articles are tagged with ' +
+                        'different tagging gems. And readers who subscribe fron the ' +
+                        'website will receive emails of latest news matching their ' +
+                        'interests, which was implemented with a synonym finder api.',
+                    imgPath: './img/news_digest.jpeg',
+                    href: 'https://github.com/YSZhuoyang/News-Digest',
+                    video: '',
+                    randTop: Math.floor(Math.random() * 100 + 20),
+                    randLeft: Math.floor(Math.random() * 100 + 710),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
+                },
+                {
+                    title: 'RideshareOZ',
+                    subtitle: 'Android, Nodejs, Mongodb',
+                    brief: 'An android app for sharing rides in Auz.' +
+                        'RidesharingOz is a non-profit organisation based in ' +
+                        'Melbourne founded with the principle objective of ' +
+                        'reversing the trend of increasing traffic congestion, ' +
+                        'which has significant negative impacts on productivity, ' +
+                        'the environment. With RideShare-OZ, users are able to ' +
+                        'share a ride with others, going to somewhere or some ' +
+                        'event together.',
+                    imgPath: './img/rideshare.png',
+                    href: 'https://github.com/YSZhuoyang/SWEN90014-Masters-Engineering-Project',
+                    video: 'https://www.youtube.com/embed/--IQHUw0SYo',
+                    randTop: Math.floor(Math.random() * 100 + 350),
+                    randLeft: Math.floor(Math.random() * 100 + 20),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
+                },
+                {
+                    title: 'Magic',
+                    subtitle: 'Unity3D, C#, Kinect V2 SDK',
+                    brief: 'It is able to track and recognize players\' skeleton and ' +
+                        'gestures, based on which players can interact with the virtual ' +
+                        'scene and objects.',
+                    imgPath: './img/magic.jpg',
+                    href: 'https://github.com/YSZhuoyang/Get-Started-With-Kinect',
+                    video: 'https://www.youtube.com/embed/V1APHKYzVeQ',
+                    randTop: Math.floor(Math.random() * 100 + 350),
+                    randLeft: Math.floor(Math.random() * 100 + 365),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
+                },
+                {
+                    title: 'Functional structural plant modelling',
+                    subtitle: 'Java, Java 3D',
+                    brief: 'Doing real world experiments of growing plants takes ' +
+                        'time and costs, whereas simulation is quick and cheap. ' +
+                        'The idea behind is partially substituting real world experiments ' +
+                        'of plant growth with simulation of its growing process and ' +
+                        'interaction with the environment. A modelling ' +
+                        'platform was implemented, where users are allowed to model ' +
+                        'the plant growth by coding. A rice seedling model was built ' +
+                        'based on this platform. It consists of a structure model ' +
+                        'described with L-System rules, physiological model simulating ' +
+                        'the process of producing and allocating biomass. The model ' +
+                        'indicates the first 30 days growing of rice seedling, the ' +
+                        'result of which varies according to the light absorption and ' +
+                        'nitrogen content.',
+                    imgPath: './img/rice seedling.jpg',
+                    href: 'https://github.com/YSZhuoyang/L-System-Plant-Modelling-Platform',
+                    video: '',
+                    randTop: Math.floor(Math.random() * 100 + 350),
+                    randLeft: Math.floor(Math.random() * 100 + 710),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 }
             ]
         };
     }
 
-    renderProj1() {
+    renderProj(index) {
         const styles = {
-            position: 'relative',
-            transform: this.state.pos[0].randRot,
-            top: this.state.pos[0].randTop,
-            left: this.state.pos[0].randLeft
+            position: 'absolute',
+            transform: this.state.pos[index].randRot,
+            top: this.state.pos[index].randTop,
+            left: this.state.pos[index].randLeft
         };
 
         const contents = {
-            title: this.state.pos[0].title,
-            subtitle: this.state.pos[0].subtitle,
-            brief: this.state.pos[0].brief,
-            imgPath: this.state.pos[0].imgPath,
-            href: this.state.pos[0].href,
-            video: this.state.pos[0].video
+            title: this.state.pos[index].title,
+            subtitle: this.state.pos[index].subtitle,
+            brief: this.state.pos[index].brief,
+            imgPath: this.state.pos[index].imgPath,
+            href: this.state.pos[index].href,
+            video: this.state.pos[index].video
         }
 
         return(
-            <ProjCard mystyle={styles} mycontents={contents} myid='proj1' />
-        );
-    }
-
-    renderProj2() {
-        const styles = {
-            position: 'relative',
-            transform: this.state.pos[1].randRot,
-            top: this.state.pos[1].randTop,
-            left: this.state.pos[1].randLeft
-        };
-
-        const contents = {
-            title: this.state.pos[1].title,
-            subtitle: this.state.pos[1].subtitle,
-            brief: this.state.pos[1].brief,
-            imgPath: this.state.pos[1].imgPath,
-            href: this.state.pos[1].href,
-            video: this.state.pos[1].video
-        }
-
-        return(
-            <ProjCard mystyle={styles} mycontents={contents} myid='proj2' />
+            <ProjCard mystyle={styles} mycontents={contents} myid={'proj' + index} />
         );
     }
 
     render() {
+        /*const cards = [];
+
+        for (var i = 0; i < 4; i++)
+        {
+            
+        }*/
+
         return(
             <div id="proj-tab">
-                {this.renderProj1()}
-                {this.renderProj2()}
+                {this.renderProj(0)}
+                {this.renderProj(1)}
+                {this.renderProj(2)}
+                {this.renderProj(3)}
+                {this.renderProj(4)}
+                {this.renderProj(5)}
             </div>
         );
     }
