@@ -9,15 +9,11 @@ import './navbar.css';
 
 const NavBar = () => (
     <SwipeViews>
-        <div title={<em id="tab">My Work</em>}>
+        <div title='1'>
             <Proj />
         </div>
-        <div title={<em id="tab">About Me</em>}>
+        <div title='2'>
             <AboutMe />
-        </div>
-        <div title={<em id="tab">My Trace</em>}>
-            <p>Tab 3 content.</p>
-            <div id="my-trace" />
         </div>
     </SwipeViews>
 );

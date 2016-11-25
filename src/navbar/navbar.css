@@ -9,3 +9,7 @@
         font-size:130%;
     }
 }
+
+.SwipeView {
+  overflow-y: hidden !important;
+}
