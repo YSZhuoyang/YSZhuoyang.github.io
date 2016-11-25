@@ -9,7 +9,6 @@ import '../public/index.css';
 
 const Body = () => (
     <div>
-        <div id="overlay" />
         <Slider />
 
         <div className="tab-body">

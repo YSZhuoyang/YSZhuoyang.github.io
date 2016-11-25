@@ -1,6 +1,7 @@
 
 import React from 'react';
 import SwipeViews from 'react-swipe-views';
+
 import AboutMe from '../aboutMe/AboutMe.js';
 import Proj from '../projects/Proj.js';
 
@@ -9,11 +10,14 @@ import './navbar.css';
 
 const NavBar = () => (
     <SwipeViews>
-        <div title='1'>
+        <div title={<em id="tab">My Work</em>}>
             <Proj />
         </div>
-        <div title='2'>
+        <div title={<em id="tab">About Me</em>}>
             <AboutMe />
+        </div>
+        <div title={<em id="tab">My Trace</em>}>
+            <p>Under construction.</p>
         </div>
     </SwipeViews>
 );

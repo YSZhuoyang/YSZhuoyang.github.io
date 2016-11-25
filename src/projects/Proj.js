@@ -41,12 +41,17 @@ class ProjCard extends React.Component {
             open={this.state.open}
             onRequestClose={this.handleClose}
             >
-                <div>
-                    <iframe id="project_video" 
-                    src={this.props.mycontents.video}
-                    frameBorder="0" allowFullScreen>
-                    </iframe>
-                </div>
+                {
+                    this.props.mycontents.video !== '' ?
+                    <div>
+                        <iframe id="project_video" 
+                        src={this.props.mycontents.video}
+                        frameBorder="0" allowFullScreen>
+                        </iframe>
+                    </div>
+                    : <div/>
+                }
+                
                 <div id="proj-brief-text">
                     <br />
                     {this.props.mycontents.brief}
@@ -110,7 +115,7 @@ export default class Proj extends React.Component {
                         'shading, shadow mapping, as well as a ' + 
                         'GPU based particle system simulating weather ' +
                         'effects.',
-                    imgPath: './img/pass.png',
+                    imgPath: './img/green_space.PNG',
                     href: 'https://github.com/YSZhuoyang/Green-Space-Plant-Landscaping',
                     video: 'https://www.youtube.com/embed/7JP8YgwPKTw?rel=0',
                     randTop: Math.floor(Math.random() * 400 + 20),
