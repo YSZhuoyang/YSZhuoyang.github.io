@@ -63,6 +63,15 @@ class ProjCard extends React.Component {
     }
     
     render() {
+        /*const height = document.getElementById('proj-tab').height;
+        const width = document.getElementById('proj-tab').width;
+        const currStyle = this.props.mystyle;
+
+        console.log (height);
+
+        currStyle.top *= height / 400;
+        currStyle.left *= width / 600;*/
+
         return (
             <div>
                 <div style={this.props.mystyle} className="card"
@@ -178,7 +187,7 @@ export default class Proj extends React.Component {
 
     render() {
         return(
-            <div>
+            <div id="proj-tab">
                 {this.renderProj1()}
                 {this.renderProj2()}
             </div>

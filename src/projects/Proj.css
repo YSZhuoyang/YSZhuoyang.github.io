@@ -1,10 +1,19 @@
 
 .card {
+    position: absolute;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
     transition: 0.2s ease-in-out;
     width: 350px;
     height: 300px;
+}
+
+@media all and (max-width: 768px) {
+    .card {
+        width: 50%;
+        height: 70%;
+        transform: translate(-10, -10) !important;
+    }
 }
 
 /* On mouse-over, add a deeper shadow */
