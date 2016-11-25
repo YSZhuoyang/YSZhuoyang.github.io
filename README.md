@@ -1,6 +1,6 @@
 ## My personal web dev
 
-### npm packages used
+### npm react toolkits used
 * react-swipe-views
 * material-ui
 * react-tap-event-plugin

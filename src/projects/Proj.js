@@ -45,6 +45,7 @@ class ProjCard extends React.Component {
                         src={this.props.mycontents.video}
                         frameBorder="0" allowFullScreen>
                         </iframe>
+                        <div className="clear"></div>
                     </div>
                     : <div/>
                 }
