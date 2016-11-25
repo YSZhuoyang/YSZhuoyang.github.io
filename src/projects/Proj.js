@@ -2,12 +2,9 @@
 import React from 'react';
 import Dialog from 'material-ui/Dialog';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import './Proj.css';
 
-
-injectTapEventPlugin();
 
 class ProjCard extends React.Component {
     

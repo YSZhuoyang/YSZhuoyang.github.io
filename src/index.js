@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import Slider from './slider/Slider';
 import NavBar from './navbar/NavBar';
 
 import '../public/index.css';
 
+
+injectTapEventPlugin();
 
 const Body = () => (
     <div>
