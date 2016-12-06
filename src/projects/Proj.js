@@ -109,7 +109,7 @@ export default class Proj extends React.Component {
                     imgPath: './img/pass.png',
                     href: '',
                     video: '',
-                    randTop: Math.floor(Math.random() * 100 + 20),
+                    randTop: Math.floor(Math.random() * 100 + 30),
                     randLeft: Math.floor(Math.random() * 100 + 20),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 }, 
@@ -131,7 +131,7 @@ export default class Proj extends React.Component {
                     imgPath: './img/green_space.PNG',
                     href: 'https://github.com/YSZhuoyang/Green-Space-Plant-Landscaping',
                     video: 'https://www.youtube.com/embed/7JP8YgwPKTw?rel=0',
-                    randTop: Math.floor(Math.random() * 100 + 20),
+                    randTop: Math.floor(Math.random() * 100 + 30),
                     randLeft: Math.floor(Math.random() * 100 + 365),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
@@ -148,7 +148,7 @@ export default class Proj extends React.Component {
                     imgPath: './img/news_digest.jpeg',
                     href: 'https://github.com/YSZhuoyang/News-Digest',
                     video: '',
-                    randTop: Math.floor(Math.random() * 100 + 20),
+                    randTop: Math.floor(Math.random() * 100 + 30),
                     randLeft: Math.floor(Math.random() * 100 + 710),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
@@ -166,7 +166,7 @@ export default class Proj extends React.Component {
                     imgPath: './img/rideshare.png',
                     href: 'https://github.com/YSZhuoyang/SWEN90014-Masters-Engineering-Project',
                     video: 'https://www.youtube.com/embed/--IQHUw0SYo',
-                    randTop: Math.floor(Math.random() * 100 + 350),
+                    randTop: Math.floor(Math.random() * 100 + 380),
                     randLeft: Math.floor(Math.random() * 100 + 20),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
@@ -179,7 +179,7 @@ export default class Proj extends React.Component {
                     imgPath: './img/magic.jpg',
                     href: 'https://github.com/YSZhuoyang/Get-Started-With-Kinect',
                     video: 'https://www.youtube.com/embed/V1APHKYzVeQ',
-                    randTop: Math.floor(Math.random() * 100 + 350),
+                    randTop: Math.floor(Math.random() * 100 + 380),
                     randLeft: Math.floor(Math.random() * 100 + 365),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
@@ -202,7 +202,7 @@ export default class Proj extends React.Component {
                     imgPath: './img/rice seedling.jpg',
                     href: 'https://github.com/YSZhuoyang/L-System-Plant-Modelling-Platform',
                     video: '',
-                    randTop: Math.floor(Math.random() * 100 + 350),
+                    randTop: Math.floor(Math.random() * 100 + 380),
                     randLeft: Math.floor(Math.random() * 100 + 710),
                     randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 }
@@ -233,21 +233,14 @@ export default class Proj extends React.Component {
     }
 
     render() {
-        /*const cards = [];
-
-        for (var i = 0; i < 4; i++)
-        {
-            
-        }*/
+        // May randomize it.
+        const cardIds = [0, 1, 2, 3, 4, 5];
 
         return(
             <div id="proj-tab">
-                {this.renderProj(0)}
-                {this.renderProj(1)}
-                {this.renderProj(2)}
-                {this.renderProj(3)}
-                {this.renderProj(4)}
-                {this.renderProj(5)}
+                {
+                    cardIds.map((i) => (this.renderProj(i)))
+                }
             </div>
         );
     }
