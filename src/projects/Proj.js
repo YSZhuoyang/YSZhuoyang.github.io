@@ -238,9 +238,7 @@ export default class Proj extends React.Component {
 
         return(
             <div id="proj-tab">
-                {
-                    cardIds.map((i) => (this.renderProj(i)))
-                }
+                { cardIds.map((i) => (this.renderProj(i))) }
             </div>
         );
     }

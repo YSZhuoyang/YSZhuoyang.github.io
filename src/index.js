@@ -5,7 +5,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import Slider from './slider/Slider';
 import NavBar from './navbar/NavBar';
 
-import '../public/index.css';
+import './index.css';
 
 
 injectTapEventPlugin();
