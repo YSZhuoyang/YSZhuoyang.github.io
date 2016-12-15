@@ -52,7 +52,7 @@ export default class AboutMe extends React.Component {
                         <li>Unity3D, Kinect SDK</li>
                     </ul>
                     
-                    <h2>Go to my <a href="https://github.com/YSZhuoyang" target="_blank" rel="nofollow" ><font color="blue">Github</font></a> </h2>
+                    <h2>Go to my <a href="https://github.com/YSZhuoyang" target="_blank" rel="nofollow" ><font color="#ccdd33">Github</font></a> </h2>
                 </dd>
             </div>
         );
@@ -69,7 +69,7 @@ export default class AboutMe extends React.Component {
                         <li>Plant physiology model: photosynthesis and assimilate partitioning</li><br/>
                         <li>Publication: 
                             <a href="http://www.davidpublisher.org/index.php/Home/Article/index?id=738.html" >
-                            <font color="#404040">A Functional-Structural Model of Rice Seedling Coupled with Nitrogen Metabolism</font>
+                            <font color="#dddddd">A Functional-Structural Model of Rice Seedling Coupled with Nitrogen Metabolism</font>
                             </a>
                         </li>
                     </ul>
@@ -80,14 +80,14 @@ export default class AboutMe extends React.Component {
                         <li>Unity scripting with C# and Kinect v2 SDK, skeleton tracking</li>
                     </ul>
 
-                    <h2><a href="http://codebrew.net.au/" ><font color="#404040">Codebrew hackathon 2016</font></a><span>Team: Tomatoes - Melbourne - 2016</span></h2>
+                    <h2><a href="http://codebrew.net.au/" ><font color="#eeeeee">Codebrew hackathon 2016</font></a><span>Team: Tomatoes - Melbourne - 2016</span></h2>
                     <ul>
                         <li>Innovation in Sustainability Award</li>
                     </ul>
 
                     <h2>
                         <a href="https://hackathongoddess.wordpress.com/2016/01/07/ge-breaks-into-the-hackathon-scene-with-industry-challenges/" target="_blank" rel="nofollow" >
-                        <font color="#404040">GE hackathon 2015</font>
+                        <font color="#eeeeee">GE hackathon 2015</font>
                         </a>
                         <span>Team: Pocket Rails - Melbourne - 2015</span>
                     </h2>
@@ -96,7 +96,7 @@ export default class AboutMe extends React.Component {
                     </ul>
 
                     <h2>Go to my <a href="https://au.linkedin.com/in/yuszy" target="_blank" rel="nofollow">
-                    <font color="blue">LinkedIn</font></a> </h2>
+                    <font color="#ccdd33">LinkedIn</font></a> </h2>
                 </dd>
             </div>
         );

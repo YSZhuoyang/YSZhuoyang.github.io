@@ -5,6 +5,7 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 1200px;
+    color: #eeeeee;
 }
 
 @media all and (max-width: 768px) {
@@ -14,7 +15,8 @@
 }
 
 body {
-    background-image: url("../public/img/noise.jpg");
+    background-image: url("../public/img/background.jpeg");
+    background-size: cover;
     min-height: 2000px;
 }
 
