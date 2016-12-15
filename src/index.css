@@ -9,7 +9,7 @@
 
 @media all and (max-width: 768px) {
     .tab-body {
-        font-size:70%;
+        font-size:70% !important;
     }
 }
 

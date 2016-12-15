@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Grid, Row, Col, Thumbnail} from 'react-bootstrap/lib';
 import Dialog from 'material-ui/Dialog';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
@@ -61,27 +62,19 @@ class ProjCard extends React.Component {
     }
     
     render() {
-        /*const height = document.getElementById('proj-tab').height;
-        const width = document.getElementById('proj-tab').width;
-        const currStyle = this.props.mystyle;
-
-        console.log (height);
-
-        currStyle.top *= height / 400;
-        currStyle.left *= width / 600;*/
-
         return (
             <div>
                 <div style={this.props.mystyle} className="card"
                 id={this.props.myid}
                 onTouchTap={this.handleOpen}>
-                    <img src={this.props.mycontents.imgPath} alt="Avatar" />
-                    <div className="overlay" />
-                    <div className="title">
-                        <h4><b>{this.props.mycontents.title}</b></h4>
-                    </div>
-                    <div className="subtitle">
-                        <h4><b>{this.props.mycontents.subtitle}</b></h4>
+                    <Thumbnail src={this.props.mycontents.imgPath} alt="242x200" />
+                    <div className="overlay">
+                        <div className="title">
+                            <h4><b>{this.props.mycontents.title}</b></h4>
+                        </div>
+                        <div className="subtitle">
+                            <h4><b>{this.props.mycontents.subtitle}</b></h4>
+                        </div>
                     </div>
                 </div>
                 {this.renderContent()}
@@ -92,9 +85,7 @@ class ProjCard extends React.Component {
 
 export default class Proj extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
+    state = {
             pos: [
                 {
                     title: 'Password security',
@@ -109,9 +100,6 @@ export default class Proj extends React.Component {
                     imgPath: './img/pass.png',
                     href: '',
                     video: '',
-                    randTop: Math.floor(Math.random() * 100 + 30),
-                    randLeft: Math.floor(Math.random() * 100 + 20),
-                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 }, 
                 {
                     title: 'Green space',
@@ -131,13 +119,10 @@ export default class Proj extends React.Component {
                     imgPath: './img/green_space.PNG',
                     href: 'https://github.com/YSZhuoyang/Green-Space-Plant-Landscaping',
                     video: 'https://www.youtube.com/embed/7JP8YgwPKTw?rel=0',
-                    randTop: Math.floor(Math.random() * 100 + 30),
-                    randLeft: Math.floor(Math.random() * 100 + 365),
-                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
                 {
                     title: 'News digest',
-                    subtitle: 'Ruby on rails, bootstrap',
+                    subtitle: 'Ruby on rails',
                     brief: 'A news feeds website where users are able to read ' +
                         'news articles scrapped from multiple news sources (e.g. ' +
                         'New York Times, The Age, ABC News), and subscribe based on ' +
@@ -148,9 +133,6 @@ export default class Proj extends React.Component {
                     imgPath: './img/news_digest.jpeg',
                     href: 'https://github.com/YSZhuoyang/News-Digest',
                     video: '',
-                    randTop: Math.floor(Math.random() * 100 + 30),
-                    randLeft: Math.floor(Math.random() * 100 + 710),
-                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
                 {
                     title: 'RideshareOZ',
@@ -166,9 +148,6 @@ export default class Proj extends React.Component {
                     imgPath: './img/rideshare.png',
                     href: 'https://github.com/YSZhuoyang/SWEN90014-Masters-Engineering-Project',
                     video: 'https://www.youtube.com/embed/--IQHUw0SYo',
-                    randTop: Math.floor(Math.random() * 100 + 380),
-                    randLeft: Math.floor(Math.random() * 100 + 20),
-                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
                 {
                     title: 'Magic',
@@ -179,9 +158,6 @@ export default class Proj extends React.Component {
                     imgPath: './img/magic.jpg',
                     href: 'https://github.com/YSZhuoyang/Get-Started-With-Kinect',
                     video: 'https://www.youtube.com/embed/V1APHKYzVeQ',
-                    randTop: Math.floor(Math.random() * 100 + 380),
-                    randLeft: Math.floor(Math.random() * 100 + 365),
-                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
                 {
                     title: 'Functional structural plant modelling',
@@ -202,44 +178,30 @@ export default class Proj extends React.Component {
                     imgPath: './img/rice seedling.jpg',
                     href: 'https://github.com/YSZhuoyang/L-System-Plant-Modelling-Platform',
                     video: '',
-                    randTop: Math.floor(Math.random() * 100 + 380),
-                    randLeft: Math.floor(Math.random() * 100 + 710),
-                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 }
             ]
         };
-    }
 
     renderProj(index) {
-        const styles = {
-            position: 'absolute',
-            transform: this.state.pos[index].randRot,
-            top: this.state.pos[index].randTop,
-            left: this.state.pos[index].randLeft
-        };
-
-        const contents = {
-            title: this.state.pos[index].title,
-            subtitle: this.state.pos[index].subtitle,
-            brief: this.state.pos[index].brief,
-            imgPath: this.state.pos[index].imgPath,
-            href: this.state.pos[index].href,
-            video: this.state.pos[index].video
-        }
-
         return(
-            <ProjCard mystyle={styles} mycontents={contents} myid={'proj' + index} />
+            <ProjCard mycontents={this.state.pos[index]} myid={'proj' + index} />
         );
     }
 
     render() {
-        // May randomize it.
-        const cardIds = [0, 1, 2, 3, 4, 5];
-
-        return(
-            <div id="proj-tab">
-                { cardIds.map((i) => (this.renderProj(i))) }
-            </div>
+        return (
+            <Grid>
+                <Row>
+                    <Col sm={4}>{ this.renderProj(0) }</Col>
+                    <Col sm={4}>{ this.renderProj(1) }</Col>
+                    <Col sm={4}>{ this.renderProj(2) }</Col>
+                </Row>
+                <Row>
+                    <Col sm={4}>{ this.renderProj(3) }</Col>
+                    <Col sm={4}>{ this.renderProj(4) }</Col>
+                    <Col sm={4}>{ this.renderProj(5) }</Col>
+                </Row>
+            </Grid>
         );
     }
 }

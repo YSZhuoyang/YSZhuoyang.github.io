@@ -8,6 +8,7 @@ import Proj from '../projects/Proj.js';
 import 'react-swipe-views/lib/react-swipe-views.css';
 import './navbar.css';
 
+
 const NavBar = () => (
     <SwipeViews>
         <div title={<em id="tab">My Work</em>}>
@@ -15,9 +16,6 @@ const NavBar = () => (
         </div>
         <div title={<em id="tab">About Me</em>}>
             <AboutMe />
-        </div>
-        <div title={<em id="tab">My Trace</em>}>
-            <p>Under construction.</p>
         </div>
     </SwipeViews>
 );

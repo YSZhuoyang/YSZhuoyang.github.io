@@ -63,7 +63,7 @@ export default class AboutMe extends React.Component {
             <div>
                 <dt>Experience</dt>
                 <dd>
-                    <h2>Research project <span>Major participant - ZJUT, China - 2013-2014</span></h2>
+                    <h2>Research project<span>Major participant - ZJUT, China - 2013-2014</span></h2>
                     <ul>
                         <li>Plant structure modelling using L System</li><br/>
                         <li>Plant physiology model: photosynthesis and assimilate partitioning</li><br/>

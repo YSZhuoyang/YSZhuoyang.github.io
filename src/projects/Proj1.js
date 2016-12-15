@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Coverflow from 'react-coverflow';
 import Dialog from 'material-ui/Dialog';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
@@ -62,6 +61,15 @@ class ProjCard extends React.Component {
     }
     
     render() {
+        /*const height = document.getElementById('proj-tab').height;
+        const width = document.getElementById('proj-tab').width;
+        const currStyle = this.props.mystyle;
+
+        console.log (height);
+
+        currStyle.top *= height / 400;
+        currStyle.left *= width / 600;*/
+
         return (
             <div>
                 <div style={this.props.mystyle} className="card"
@@ -101,6 +109,9 @@ export default class Proj extends React.Component {
                     imgPath: './img/pass.png',
                     href: '',
                     video: '',
+                    randTop: Math.floor(Math.random() * 100 + 30),
+                    randLeft: Math.floor(Math.random() * 100 + 20),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 }, 
                 {
                     title: 'Green space',
@@ -120,6 +131,9 @@ export default class Proj extends React.Component {
                     imgPath: './img/green_space.PNG',
                     href: 'https://github.com/YSZhuoyang/Green-Space-Plant-Landscaping',
                     video: 'https://www.youtube.com/embed/7JP8YgwPKTw?rel=0',
+                    randTop: Math.floor(Math.random() * 100 + 30),
+                    randLeft: Math.floor(Math.random() * 100 + 365),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
                 {
                     title: 'News digest',
@@ -134,6 +148,9 @@ export default class Proj extends React.Component {
                     imgPath: './img/news_digest.jpeg',
                     href: 'https://github.com/YSZhuoyang/News-Digest',
                     video: '',
+                    randTop: Math.floor(Math.random() * 100 + 30),
+                    randLeft: Math.floor(Math.random() * 100 + 710),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
                 {
                     title: 'RideshareOZ',
@@ -149,6 +166,9 @@ export default class Proj extends React.Component {
                     imgPath: './img/rideshare.png',
                     href: 'https://github.com/YSZhuoyang/SWEN90014-Masters-Engineering-Project',
                     video: 'https://www.youtube.com/embed/--IQHUw0SYo',
+                    randTop: Math.floor(Math.random() * 100 + 380),
+                    randLeft: Math.floor(Math.random() * 100 + 20),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
                 {
                     title: 'Magic',
@@ -159,6 +179,9 @@ export default class Proj extends React.Component {
                     imgPath: './img/magic.jpg',
                     href: 'https://github.com/YSZhuoyang/Get-Started-With-Kinect',
                     video: 'https://www.youtube.com/embed/V1APHKYzVeQ',
+                    randTop: Math.floor(Math.random() * 100 + 380),
+                    randLeft: Math.floor(Math.random() * 100 + 365),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 },
                 {
                     title: 'Functional structural plant modelling',
@@ -179,12 +202,22 @@ export default class Proj extends React.Component {
                     imgPath: './img/rice seedling.jpg',
                     href: 'https://github.com/YSZhuoyang/L-System-Plant-Modelling-Platform',
                     video: '',
+                    randTop: Math.floor(Math.random() * 100 + 380),
+                    randLeft: Math.floor(Math.random() * 100 + 710),
+                    randRot: 'rotate(' + (Math.floor(Math.random() * 100) - 50) + 'deg)'
                 }
             ]
         };
     }
 
     renderProj(index) {
+        const styles = {
+            position: 'absolute',
+            transform: this.state.pos[index].randRot,
+            top: this.state.pos[index].randTop,
+            left: this.state.pos[index].randLeft
+        };
+
         const contents = {
             title: this.state.pos[index].title,
             subtitle: this.state.pos[index].subtitle,
@@ -195,7 +228,7 @@ export default class Proj extends React.Component {
         }
 
         return(
-            <ProjCard mycontents={contents} myid={'proj' + index} />
+            <ProjCard mystyle={styles} mycontents={contents} myid={'proj' + index} />
         );
     }
 
@@ -204,14 +237,9 @@ export default class Proj extends React.Component {
         const cardIds = [0, 1, 2, 3, 4, 5];
 
         return(
-            <Coverflow
-            displayQuantityOfSide={2}
-            navigation={true}
-            enableHeading={true}
-            height={640}
-            >
+            <div id="proj-tab">
                 { cardIds.map((i) => (this.renderProj(i))) }
-            </Coverflow>
+            </div>
         );
     }
 }
