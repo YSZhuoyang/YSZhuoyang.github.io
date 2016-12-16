@@ -190,7 +190,7 @@ export default class Proj extends React.Component {
 
     render() {
         return (
-            <Grid>
+            <Grid id="proj-grid">
                 <Row>
                     <Col sm={4}>{ this.renderProj(0) }</Col>
                     <Col sm={4}>{ this.renderProj(1) }</Col>
