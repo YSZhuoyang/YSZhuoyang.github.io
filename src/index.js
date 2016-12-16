@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-import Slider from './slider/Slider';
+import Status from './Status/Status';
 import NavBar from './navbar/NavBar';
 
 import './index.css';
@@ -12,7 +12,7 @@ injectTapEventPlugin();
 
 const Body = () => (
     <div>
-        <Slider />
+        <Status />
 
         <div className="tab-body">
             <NavBar />

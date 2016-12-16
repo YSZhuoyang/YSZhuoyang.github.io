@@ -30,7 +30,7 @@ export default class AboutMe extends React.Component {
                 <dd>
                     <h2>Software engineering</h2>
                     <ul>
-                        <li>software design, Testing</li><br/>
+                        <li>software design, Testing</li>
                         <li>JIRA, Git</li>                    
                     </ul>
 
@@ -41,14 +41,14 @@ export default class AboutMe extends React.Component {
                     
                     <h2>Research</h2>
                     <ul>
-                        <li>Research experiences during undergraduate and master studying</li><br/>
+                        <li>Research experiences during undergraduate and master studying</li>
                         <li>One research paper published, two software copyrights</li>
                     </ul>
 
                     <h2>Others</h2>
                     <ul>
-                        <li>Computer graphics(e.g. 3d rendering, modeling).</li><br/>
-                        <li>With OpenGL, DirectX, JOGL, Java3D experiences.</li><br/>
+                        <li>Computer graphics(e.g. 3d rendering, modeling).</li>
+                        <li>With OpenGL, DirectX, JOGL, Java3D experiences.</li>
                         <li>Unity3D, Kinect SDK</li>
                     </ul>
                     
@@ -65,8 +65,8 @@ export default class AboutMe extends React.Component {
                 <dd>
                     <h2>Research project<span>Major participant - ZJUT, China - 2013-2014</span></h2>
                     <ul>
-                        <li>Plant structure modelling using L System</li><br/>
-                        <li>Plant physiology model: photosynthesis and assimilate partitioning</li><br/>
+                        <li>Plant structure modelling using L System</li>
+                        <li>Plant physiology model: photosynthesis and assimilate partitioning</li>
                         <li>Publication: 
                             <a href="http://www.davidpublisher.org/index.php/Home/Article/index?id=738.html" >
                             <font color="#dddddd">A Functional-Structural Model of Rice Seedling Coupled with Nitrogen Metabolism</font>
@@ -76,7 +76,7 @@ export default class AboutMe extends React.Component {
                     
                     <h2>Research assistance <span>Developer - Microsoft Social NUI, Unimelb - 2016</span></h2>
                     <ul>
-                        <li>Animating and modelling with unity and blender</li><br/>
+                        <li>Animating and modelling with unity and blender</li>
                         <li>Unity scripting with C# and Kinect v2 SDK, skeleton tracking</li>
                     </ul>
 
@@ -110,7 +110,6 @@ export default class AboutMe extends React.Component {
                 <dd>Car racing games</dd>
                 <dd>Poached eggs</dd>
                 <dd>Cantopop</dd>
-                <br/>
             </div>
         );
     }
