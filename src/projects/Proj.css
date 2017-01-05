@@ -21,8 +21,8 @@
 /* Add some padding inside the card container */
 .card > .overlay > .title > h4 {
     position: absolute;
-    bottom: 13px;
-    left: 20px;
+    bottom: 26px;
+    left: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 170%;
     color: #eeffdd;
@@ -30,8 +30,8 @@
 
 .card > .overlay > .subtitle > h4 {
     position: absolute;
-    bottom: -8px;
-    left: 20px;
+    bottom: 5px;
+    left: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 120%;
     color: #cccccc;
