@@ -1,7 +1,7 @@
 
 .timeline-div {
-    overflow:scroll;
     height:1200px;
+    overflow-y: scroll;
     border-bottom-style: groove;
-    border-color: white;
+    border-color: rgb(220, 220, 220);
 }
