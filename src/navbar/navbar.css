@@ -1,0 +1,16 @@
+
+#tab {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media all and (max-width: 768px) {
+    #tab {
+        font-size:130%;
+    }
+}
+
+.SwipeView {
+  overflow-y: hidden !important;
+}

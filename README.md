@@ -1,2 +1,9 @@
-# PersonalWeb_dev
-My personal website deployed on Microsoft azure.
+## My personal web dev
+
+### npm react toolkits used
+* react-swipe-views
+* material-ui
+* react-tap-event-plugin
+* react-image-gallery
+* react-router
+

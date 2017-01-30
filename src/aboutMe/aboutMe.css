@@ -1,0 +1,95 @@
+
+.clear {
+    clear: both;
+    float: none;
+    margin: 0;
+    height: 15px;
+    max-width: 800px;
+    border-bottom: 1px solid #aaa;
+}
+
+@media all and (max-width: 768px) {
+    #pic {
+        width: 15%;
+    }
+}
+
+#about-me {
+    max-width: 800px;
+    margin: 40px auto 60px;
+    font-family: "Arial", Georgia, Serif;
+}
+
+#pic {
+    float: right;
+    margin: -30px 0 0 0;
+    width: 22%;
+}
+
+h1 {
+    margin: 0 0 16px 0;
+    padding: 0 0 16px 0;
+    font-weight: bold;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #aaa;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    position: relative;
+    color: #ffffff;
+}
+
+h2 span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+    font-family: Georgia, Serif;
+    font-size: 65%;
+    color: #dddddd;
+    font-weight: normal;
+}
+
+p {
+    margin: 0 0 10px 0;
+    line-height: 130%;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px dotted #dddddd;
+}
+
+ul {
+    margin: 0 0 32px 17px;
+}
+
+#objective {
+    width: 500px;
+    float: left;
+}
+
+#objective p {
+    font-family: Georgia, Serif;
+    font-style: italic;
+    color: #666;
+}
+    
+dt {
+    padding: 0 0 0 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+    width: 150px;
+    float: left;
+}
+
+dd {
+    width: 600px;
+    float: right;
+}
+

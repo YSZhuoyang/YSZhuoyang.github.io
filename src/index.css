@@ -1,0 +1,26 @@
+
+.tab-body {
+    padding-top: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: auto;
+    color: #eeeeee;
+}
+
+@media all and (max-width: 768px) {
+    .tab-body {
+        font-size:80% !important;
+    }
+}
+
+body {
+    background-image: url("../public/img/background.jpeg");
+    background-size: 100% 100%;
+}
+
+.pull-right {
+    text-align: right;
+    right: 0px;
+}
+
