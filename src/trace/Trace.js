@@ -16,7 +16,7 @@ const events = [{
 	"imageUrl": "./img/events/2016newyear.jpg"
 }, {
 	"date": Date.parse("2016-02-11T07:00:00.000Z"),
-	"text": "This is a brand new begining in 614 Queensberry. I love this new home",
+	"text": "This is a brand new begining in 614 Queensberry. My lovely new home",
 	"title": "614 Queensberry, Melbourne",
 	"imageUrl": "./img/events/firstday614.jpg"
 }, {
@@ -37,7 +37,6 @@ const emptyfooter = (props) => {
 };
 
 export default class App extends React.Component {
-
     render() {
         return (
 			<div className="timeline-div">

@@ -2,7 +2,6 @@
 .clear {
     clear: both;
     float: none;
-    margin: 0;
     height: 15px;
     max-width: 800px;
     border-bottom: 1px solid #aaa;
@@ -35,9 +34,8 @@ h1 {
 }
 
 h2 {
-    font-size: 150%;
-    font-weight: normal;
-    margin: 0 0 5px 0;
+    font-size: 160% !important;
+    margin: 5px 0 5px 0 !important;
     position: relative;
     color: #ffffff;
 }
@@ -55,7 +53,7 @@ h2 span {
 
 p {
     margin: 0 0 10px 0;
-    line-height: 130%;
+    line-height: 150%;
 }
 
 a {
@@ -65,7 +63,7 @@ a {
 }
 
 ul {
-    margin: 0 0 32px 17px;
+    margin: 0 0 18px 0px;
 }
 
 #objective {
