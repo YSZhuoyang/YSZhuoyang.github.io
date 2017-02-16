@@ -31,12 +31,12 @@ export default class AboutMe extends React.Component {
                     <h2>Software engineering</h2>
                     <ul>
                         <li>software design, Testing</li>
-                        <li>JIRA, Git</li>                    
+                        <li>Git</li>
                     </ul>
 
                     <h2>Languages and tools</h2>
                     <ul>
-                        <li>Java, C++, Android, Javascript, Ruby on rails ... </li>
+                        <li>Java, C++, Javascript, Android, Ruby on rails ... </li>
                     </ul>
                     
                     <h2>Research</h2>
@@ -48,7 +48,7 @@ export default class AboutMe extends React.Component {
                     <h2>Others</h2>
                     <ul>
                         <li>Computer graphics(e.g. 3d rendering, modeling).</li>
-                        <li>With OpenGL, DirectX, JOGL, Java3D experiences.</li>
+                        <li>With OpenGL, JOGL, Java3D experiences.</li>
                         <li>Unity3D, Kinect SDK</li>
                     </ul>
                     
