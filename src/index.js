@@ -16,7 +16,7 @@ const Body = () => (
 
         <div className="tab-body">
             <NavBar />
-            
+
             <footer>
                 <p className="pull-right"><a href="#">Back to top</a></p>
             </footer>
