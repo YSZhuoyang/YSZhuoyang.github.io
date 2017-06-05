@@ -52,7 +52,7 @@ export default class AboutMe extends React.Component {
                         <li>Unity3D, Kinect SDK</li>
                     </ul>
                     
-                    <h2>Go to my <a href="https://github.com/YSZhuoyang" target="_blank" rel="nofollow" ><font color="#ccdd33">Github</font></a> </h2>
+                    <h2>Go to my <a href="https://github.com/YSZhuoyang" target="_blank" rel="noopener noreferrer" ><font color="#ccdd33">Github</font></a> </h2>
                 </dd>
             </div>
         );
@@ -86,7 +86,7 @@ export default class AboutMe extends React.Component {
                     </ul>
 
                     <h2>
-                        <a href="https://hackathongoddess.wordpress.com/2016/01/07/ge-breaks-into-the-hackathon-scene-with-industry-challenges/" target="_blank" rel="nofollow" >
+                        <a href="https://hackathongoddess.wordpress.com/2016/01/07/ge-breaks-into-the-hackathon-scene-with-industry-challenges/" target="_blank" rel="noopener noreferrer" >
                         <font color="#eeeeee">GE hackathon 2015</font>
                         </a>
                         <span>Team: Pocket Rails - Melbourne - 2015</span>
@@ -95,7 +95,7 @@ export default class AboutMe extends React.Component {
                         <li>3rd prize</li>
                     </ul>
 
-                    <h2>Go to my <a href="https://au.linkedin.com/in/yuszy" target="_blank" rel="nofollow">
+                    <h2>Go to my <a href="https://au.linkedin.com/in/yuszy" target="_blank" rel="noopener noreferrer">
                     <font color="#ccdd33">LinkedIn</font></a> </h2>
                 </dd>
             </div>
@@ -161,6 +161,7 @@ export default class AboutMe extends React.Component {
                     <p/>
                     {this.renderInterests()}
                 </dl>
+                <br/>
             </div>
         );
     }

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Grid, Row, Col, Thumbnail} from 'react-bootstrap/lib';
 import Dialog from 'material-ui/Dialog';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -14,7 +15,7 @@ class ProjCard extends React.Component {
     };
 
     static childContextTypes = {
-        muiTheme: React.PropTypes.object
+        muiTheme: PropTypes.object
     }
 
     getChildContext() {
@@ -42,7 +43,8 @@ class ProjCard extends React.Component {
                 {
                     this.props.mycontents.video !== '' ?
                     <div>
-                        <iframe id="project_video" 
+                        <iframe id="project_video"
+                        title={this.props.mycontents.title}
                         src={this.props.mycontents.video}
                         frameBorder="0" allowFullScreen>
                         </iframe>

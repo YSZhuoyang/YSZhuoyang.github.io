@@ -1,15 +1,13 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {Tabs, Tab} from 'material-ui/Tabs';
+import { Tabs, Tab } from 'material-ui/Tabs';
 import { getMuiTheme } from 'material-ui/styles';
 import SwipeableViews from 'react-swipeable-views';
 
 import AboutMe from '../aboutMe/AboutMe';
 import Proj from '../projects/Proj';
 import Trace from '../trace/Trace';
-
-import './navbar.css';
 
 
 class NavBar extends Component {
@@ -28,25 +26,19 @@ class NavBar extends Component {
             },
             labelStyles: []
         };
+        
         this.lableStyleOptions = {
             defaultLabelStyle: {
-                fontSize: 32,
                 fontStyle: 'italic',
                 fontFamily: 'Times New Roman',
                 color: '#eeeeddaa'
             },
             activeLabelStyle: {
-                fontSize: 32,
                 fontStyle: 'italic',
                 fontFamily: 'Times New Roman',
                 color: '#eeeedd'
             }
         };
-        this.labelStyleTemplates = [
-            this.lableStyleOptions.defaultLabelStyle,
-            this.lableStyleOptions.defaultLabelStyle,
-            this.lableStyleOptions.defaultLabelStyle
-        ];
     }
 
     handleChange = (value) => {
@@ -66,7 +58,20 @@ class NavBar extends Component {
     }
 
     render() {
-        const newLableStyles = this.labelStyleTemplates.slice();
+        if (this.props.windowWidth < 768) {
+            this.lableStyleOptions.defaultLabelStyle.fontSize = 16;
+            this.lableStyleOptions.activeLabelStyle.fontSize = 16;
+        }
+        else {
+            this.lableStyleOptions.defaultLabelStyle.fontSize = 32;
+            this.lableStyleOptions.activeLabelStyle.fontSize = 32;
+        }
+
+        const newLableStyles = [
+            this.lableStyleOptions.defaultLabelStyle,
+            this.lableStyleOptions.defaultLabelStyle,
+            this.lableStyleOptions.defaultLabelStyle
+        ];
         newLableStyles[this.state.slideIndex] =
             this.lableStyleOptions.activeLabelStyle;
 

@@ -34,10 +34,10 @@
 
 @media all and (max-width: 1080px) {
     .status-div > .date {
-        font-size: 35px;
+        font-size: 24px;
     }
     
     .status-div > .news {
-        font-size: 20px;
+        font-size: 12px;
     }
 }

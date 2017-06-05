@@ -10,22 +10,52 @@ import './index.css';
 
 injectTapEventPlugin();
 
-const Body = () => (
-    <div>
-        <Status />
+class MainBody extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            windowWidth: window.innerWidth,
+            windowHeight: window.innerHeight
+        };
+        this.updateDimensions = this.updateDimensions.bind(this);
+    }
 
-        <div className="tab-body">
-            <NavBar />
+    updateDimensions() {
+        this.setState({
+            windowWidth: window.innerWidth,
+            windowHeight: window.innerHeight
+        });
+    }
 
-            <footer>
-                <p className="pull-right"><a href="#">Back to top</a></p>
-            </footer>
-        </div>
-    </div>
-);
+    componentWillMount() {
+        this.updateDimensions();
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.updateDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateDimensions);
+    }
+
+    render() {
+        return(
+            <div>
+                <Status />
+
+                <div className="tab-body">
+                    <NavBar
+                    windowWidth={this.state.windowWidth}
+                    windowHeight={this.state.windowHeight} />
+                </div>
+            </div>
+        );
+    }
+}
 
 ReactDOM.render(
-  <Body />, 
-  document.getElementById('my-body')
+    <MainBody />,
+    document.getElementById('my-body')
 );
 
