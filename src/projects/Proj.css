@@ -101,3 +101,25 @@
     max-width: 800px;
     border-bottom: 1px solid #999;
 }
+
+@media all and (max-width: 768px) {
+    #source-link {
+        font-size: 100%;
+    }
+
+    .clear {
+        height: 10px;
+    }
+
+    #proj-brief-text {
+        font-size: 14px;
+    }
+
+    #project_video {
+        height:100px;
+    }
+
+    #project_video {
+        margin-top:20px;
+    }
+}
