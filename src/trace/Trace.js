@@ -1,8 +1,8 @@
 
 import React from 'react';
-import Timeline from 'react-image-timeline';
+import Timeline from './timeline/timeline';
 import events from './Events.js';
-import 'react-image-timeline/dist/timeline.css';
+import './timeline/timeline.css';
 import './trace.css';
 
 
