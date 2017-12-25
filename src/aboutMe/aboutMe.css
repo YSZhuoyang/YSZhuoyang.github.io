@@ -51,11 +51,6 @@ h2 span {
     font-weight: normal;
 }
 
-p {
-    margin: 0 0 10px 0;
-    line-height: 150%;
-}
-
 a {
     color: #ccc;
     text-decoration: none;
@@ -66,28 +61,40 @@ ul {
     margin: 0 0 18px 0px;
 }
 
-#objective {
-    width: 500px;
-    float: left;
+#profile {
+    width: 75%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    font-style: italic;
 }
 
-#objective p {
-    font-family: Georgia, Serif;
-    font-style: italic;
-    color: #666;
-}
-    
 dt {
     padding: 0 0 0 0;
     font-style: italic;
     font-weight: bold;
     font-size: 150%;
-    width: 150px;
+    width: 40%;
     float: left;
 }
 
 dd {
-    width: 600px;
+    width: 60%;
     float: right;
 }
 
+#my-favorite-game {
+    width: 120px;
+    height: 25px;
+}
+
+#interests {
+    margin-top: 20px;
+}
+
+#email {
+    margin-top: 10px;
+    line-height: 150%;
+}

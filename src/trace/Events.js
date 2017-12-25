@@ -34,6 +34,11 @@ const events = [{
 	"text": "Bought myself a reward for completing the 2 years Master study finally.",
 	"title": "North Melbourne",
 	"imageUrl": "./img/events/XPS13.jpg"
+}, {
+	"date": Object(Date.parse("2017-12-24T07:00:00.000Z")),
+	"text": "Darkness is falling onto my desk...",
+	"title": "Brunswick",
+	"imageUrl": "./img/events/darkness.jpg"
 }];
 
 module.exports = events;
