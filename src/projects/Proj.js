@@ -1,9 +1,7 @@
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import {Grid, Row, Col, Thumbnail} from 'react-bootstrap/lib';
-import Dialog from 'material-ui/Dialog';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import Dialog from '@material-ui/core/Dialog';
 
 import './Proj.css';
 
@@ -14,15 +12,14 @@ class ProjCard extends React.Component {
         open: false,
     };
 
-    static childContextTypes = {
-        muiTheme: PropTypes.object
-    }
-
-    getChildContext() {
-        return {
-            muiTheme: getMuiTheme()
-        }
-    }
+    // handleClose = () => {
+    //     this.props.onClose(this.props.selectedValue);
+    //   };
+    
+    //   handleListItemClick = value => {
+    //     this.props.onClose(value);
+    //   };
+    
 
     handleOpen = () => {
         this.setState({open: true});
@@ -38,7 +35,7 @@ class ProjCard extends React.Component {
             title={this.props.mycontents.title}
             modal={false}
             open={this.state.open}
-            onRequestClose={this.handleClose}
+            onClose={this.handleClose}
             >
                 {
                     this.props.mycontents.video !== '' ?
@@ -68,7 +65,7 @@ class ProjCard extends React.Component {
             <div>
                 <div style={this.props.mystyle} className="card"
                 id={this.props.myid}
-                onTouchTap={this.handleOpen}>
+                onClick={this.handleOpen}>
                     <Thumbnail src={this.props.mycontents.imgPath} alt="242x200" />
                     <div className="overlay">
                         <div className="title">

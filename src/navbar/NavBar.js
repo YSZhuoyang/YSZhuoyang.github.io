@@ -1,98 +1,95 @@
 
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Tabs, Tab } from 'material-ui/Tabs';
-import { getMuiTheme } from 'material-ui/styles';
+import React from 'react';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 import SwipeableViews from 'react-swipeable-views';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 
 import AboutMe from '../aboutMe/AboutMe';
 import Proj from '../projects/Proj';
 import Trace from '../trace/Trace';
 
 
-class NavBar extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            slideIndex: 0,
-            // Tab styles
-            tabContainerStyles: {
-                background: 'transparent'
-            },
-            inkBarStyles: {
-                background: '#ee8855',
-                height: '5px'
-            },
-            labelStyles: []
-        };
-        
-        this.lableStyleOptions = {
-            defaultLabelStyle: {
-                fontStyle: 'italic',
-                fontFamily: 'Times New Roman',
-                color: '#eeeeddaa'
-            },
-            activeLabelStyle: {
-                fontStyle: 'italic',
-                fontFamily: 'Times New Roman',
-                color: '#eeeedd'
-            }
-        };
+const getStyles = theme => ({
+    tabRoot: {
+        flex: 1,
+        width: "33%",
+        maxWidth: 400,
+        minWidth: 72
+    },
+    indicator: {
+        height: 4
+    },
+    label: {
+        fontSize: 28
+    },
+    labelWrapped: {
+        fontSize: 16
     }
+});
 
-    handleChange = (value) => {
-        this.setState({
-            slideIndex: value,
-        });
+class NavBar extends React.Component {
+
+    state = {
+        value: 0
     };
 
-    static childContextTypes = {
-        muiTheme: PropTypes.object
+    containerStyle = {
+        background: 'transparent'
     };
 
-    getChildContext() {
-        return {
-            muiTheme: getMuiTheme()
-        };
+    inkBarStyle = {
+        background: '#ee8855',
+        height: '5px'
     }
+
+    handleChange = (event, value) => {
+        this.setState({ value });
+      };
+
+    handleChangeIndex = index => {
+        this.setState({ value: index });
+    };
 
     render() {
-        if (this.props.windowWidth < 768) {
-            this.lableStyleOptions.defaultLabelStyle.fontSize = 16;
-            this.lableStyleOptions.activeLabelStyle.fontSize = 16;
-        }
-        else {
-            this.lableStyleOptions.defaultLabelStyle.fontSize = 32;
-            this.lableStyleOptions.activeLabelStyle.fontSize = 32;
-        }
-
-        const newLableStyles = [
-            this.lableStyleOptions.defaultLabelStyle,
-            this.lableStyleOptions.defaultLabelStyle,
-            this.lableStyleOptions.defaultLabelStyle
-        ];
-        newLableStyles[this.state.slideIndex] =
-            this.lableStyleOptions.activeLabelStyle;
+        const { classes } = this.props;
 
         return (
-            <div>
+            <div >
                 <Tabs
+                value={this.state.value}
                 onChange={this.handleChange}
-                value={this.state.slideIndex}
-                tabItemContainerStyle={this.state.tabContainerStyles}
-                inkBarStyle={this.state.inkBarStyles}
+                classes={{
+                    indicator: classes.indicator
+                }}
+                centered
                 >
-                    <Tab label="My Trace" style={newLableStyles[0]} value={0} />
-                    <Tab label="My Work" style={newLableStyles[1]} value={1} />
-                    <Tab label="About Me" style={newLableStyles[2]} value={2} />
+                    <Tab
+                    classes={{
+                        root: classes.tabRoot,
+                        label: classes.label,
+                        labelWrapped: classes.labelWrapped
+                    }} label="My Trace" value={0} />
+                    <Tab
+                    classes={{
+                        root: classes.tabRoot,
+                        label: classes.label,
+                        labelWrapped: classes.labelWrapped
+                    }} label="My Work" value={1} />
+                    <Tab
+                    classes={{
+                        root: classes.tabRoot,
+                        label: classes.label,
+                        labelWrapped: classes.labelWrapped
+                    }} label="About Me" value={2} />
                 </Tabs>
 
                 <br/>
 
                 <SwipeableViews
-                index={this.state.slideIndex}
-                onChangeIndex={this.handleChange}
+                index={this.state.value}
+                onChangeIndex={this.handleChangeIndex}
                 >
                     <Trace />
                     <Proj />
@@ -103,4 +100,8 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar;
+NavBar.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(getStyles)(NavBar);

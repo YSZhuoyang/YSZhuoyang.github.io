@@ -10,7 +10,7 @@ const emptyfooter = (props) => {
     return <div></div>;
 };
 
-export default class App extends React.Component {
+export default class Trace extends React.Component {
     render() {
         return (
 			<div className="timeline-div">
