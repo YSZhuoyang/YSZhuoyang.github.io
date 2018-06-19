@@ -29,9 +29,6 @@ const styles = theme => ({
         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
     },
-    tile: {
-        cellHeight: 400
-    },
     titleBar: {
         background:
             'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
