@@ -1,7 +1,5 @@
 
 import React from 'react';
-// import {Grid, Row, Col, Thumbnail} from 'react-bootstrap/lib';
-
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
@@ -10,7 +8,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 
 import Dialog from '@material-ui/core/Dialog';
 
-import './Proj.css';
+// import './Proj.css';
 
 const styles = theme => ({
     root: {
@@ -18,13 +16,21 @@ const styles = theme => ({
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         overflow: 'hidden',
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: 'transparent'
     },
     gridList: {
-        width: 500,
-        height: 450,
+        width: 1200,
+        [theme.breakpoints.up('md')]: {
+            height: 800
+        },
+        [theme.breakpoints.up('lg')]: {
+            height: 1000
+        },
         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
+    },
+    tile: {
+        cellHeight: 400
     },
     titleBar: {
         background:
@@ -183,9 +189,9 @@ class ProjGridList extends React.Component {
 
         return (
             <div className={classes.root}>
-                <GridList cellHeight={200} spacing={1} className={classes.gridList}>
+                <GridList cellHeight={'auto'} className={classes.gridList}>
                 {tileData.map(tile => (
-                    <GridListTile
+                    <GridListTile className={classes.tile}
                     key={tile.imgPath} cols={1} rows={1}
                     onClick={this.handleOpen}
                     >
