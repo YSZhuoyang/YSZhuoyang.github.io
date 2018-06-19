@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 import AboutMe from '../aboutMe/AboutMe';
-import Proj from '../projects/Proj';
+import ProjGridList from '../projects/Proj';
 import Trace from '../trace/Trace';
 
 
@@ -19,13 +19,19 @@ const getStyles = theme => ({
         minWidth: 72
     },
     indicator: {
+        background: "#eeee44",
         height: 4
     },
     label: {
-        fontSize: 28
-    },
-    labelWrapped: {
-        fontSize: 16
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 14
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: 18
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: 28
+        }
     }
 });
 
@@ -34,15 +40,6 @@ class NavBar extends React.Component {
     state = {
         value: 0
     };
-
-    containerStyle = {
-        background: 'transparent'
-    };
-
-    inkBarStyle = {
-        background: '#ee8855',
-        height: '5px'
-    }
 
     handleChange = (event, value) => {
         this.setState({ value });
@@ -68,20 +65,17 @@ class NavBar extends React.Component {
                     <Tab
                     classes={{
                         root: classes.tabRoot,
-                        label: classes.label,
-                        labelWrapped: classes.labelWrapped
+                        label: classes.label
                     }} label="My Trace" value={0} />
                     <Tab
                     classes={{
                         root: classes.tabRoot,
-                        label: classes.label,
-                        labelWrapped: classes.labelWrapped
+                        label: classes.label
                     }} label="My Work" value={1} />
                     <Tab
                     classes={{
                         root: classes.tabRoot,
-                        label: classes.label,
-                        labelWrapped: classes.labelWrapped
+                        label: classes.label
                     }} label="About Me" value={2} />
                 </Tabs>
 
@@ -92,7 +86,7 @@ class NavBar extends React.Component {
                 onChangeIndex={this.handleChangeIndex}
                 >
                     <Trace />
-                    <Proj />
+                    <ProjGridList />
                     <AboutMe />
                 </SwipeableViews>
             </div>
