@@ -188,7 +188,7 @@ class ProjGridList extends React.Component {
             <div className={classes.root}>
                 <GridList cellHeight={'auto'} className={classes.gridList}>
                 {tileData.map(tile => (
-                    <GridListTile className={classes.tile}
+                    <GridListTile
                     key={tile.imgPath} cols={1} rows={1}
                     onClick={this.handleOpen}
                     >
