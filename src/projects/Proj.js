@@ -8,7 +8,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 
 import Dialog from '@material-ui/core/Dialog';
 
-// import './Proj.css';
+import './Proj.css';
 
 const styles = theme => ({
     root: {
@@ -19,12 +19,12 @@ const styles = theme => ({
         backgroundColor: 'transparent'
     },
     gridList: {
-        width: 1200,
-        [theme.breakpoints.up('md')]: {
-            height: 800
+        width: '80%',
+        [theme.breakpoints.down(400)]: {
+            height: 500
         },
-        [theme.breakpoints.up('lg')]: {
-            height: 1000
+        [theme.breakpoints.up(400)]: {
+            height: 'auto'
         },
         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
@@ -135,32 +135,34 @@ const tileData = [{
 
 class ProjDialog extends React.Component {
 
-    state = {
-        open: false
-    };
+    // state = {
+    //     open: false
+    // };
 
-    handleOpen = () => {
-        this.setState({open: true});
-    };
+    // handleOpen = () => {
+    //     this.setState({open: true});
+    // };
 
-    handleClose = () => {
-        this.setState({open: false});
-    };
+    // handleClose = () => {
+    //     this.setState({open: false});
+    // };
 
     render() {
+        const { open, content, onClose } = this.props;
+
         return(
             <Dialog
-            title={this.props.title}
+            title={content.title}
             modal={false}
-            open={this.state.open}
-            onClose={this.handleClose}
+            open={open}
+            onClose={onClose}
             >
                 {
-                    this.props.video !== '' ?
+                    content.video !== '' ?
                     <div>
                         <iframe id="project_video"
-                        title={this.props.title}
-                        src={this.props.video}
+                        title={content.title}
+                        src={content.video}
                         frameBorder="0" allowFullScreen>
                         </iframe>
                         <div className="clear"></div>
@@ -170,10 +172,10 @@ class ProjDialog extends React.Component {
                 
                 <div id="proj-brief-text">
                     <br />
-                    {this.props.brief}
+                    {content.brief}
                     <br /><br />
                 </div>
-                <a id="source-link" href={this.props.href}>Source</a>
+                <a id="source-link" href={content.href}>Source</a>
             </Dialog>
         );
     }
@@ -182,31 +184,45 @@ class ProjDialog extends React.Component {
 class ProjGridList extends React.Component {
 
     render() {
-        const { classes } = this.props;
+        const { classes, windowWidth } = this.props;
+        const numCols = windowWidth > 800 ? 3 : windowWidth > 400 ? 2 : 1;
 
         return (
             <div className={classes.root}>
-                <GridList cellHeight={'auto'} className={classes.gridList}>
-                {tileData.map(tile => (
-                    <GridListTile
-                    key={tile.imgPath} cols={1} rows={1}
-                    onClick={this.handleOpen}
-                    >
-                    <img src={tile.imgPath} alt={tile.title} />
-                    <GridListTileBar
-                        title={tile.title}
-                        titlePosition="top"
-                        // actionIcon={
-                        // <IconButton className={classes.icon}>
-                        //     <StarBorderIcon />
-                        // </IconButton>
-                        // }
-                        actionPosition="left"
-                        className={classes.titleBar}
-                    />
-                    <ProjDialog />
-                    </GridListTile>
-                ))}
+                <GridList
+                className={classes.gridList}
+                cellHeight={'auto'}
+                cols={numCols}
+                >
+                    {tileData.map(tile => {
+                        let open = false;
+                        const handleOpen = () => {
+                            open = true;
+                        };
+                        const handleClose = () => {
+                            open = false;
+                        };
+
+                        return (<GridListTile
+                            key={tile.imgPath} cols={1} rows={1}
+                            onClick={handleOpen}
+                            >
+                            <img src={tile.imgPath} alt={tile.title} />
+                            <GridListTileBar
+                                title={tile.title}
+                                titlePosition="top"
+                                // actionIcon={
+                                // <IconButton className={classes.icon}>
+                                //     <StarBorderIcon />
+                                // </IconButton>
+                                // }
+                                actionPosition="left"
+                                className={classes.titleBar}
+                            />
+                            <ProjDialog open={open} content={tile} onClose={handleClose} />
+                            </GridListTile>
+                        );
+                    })}
                 </GridList>
             </div>
         );

@@ -1,59 +1,4 @@
 
-#proj-grid {
-    margin-top: 5%;
-}
-
-.card {
-    /*position: absolute;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);*/
-    /* Add shadows to create the "card" effect */
-    width: 100%;
-    height: 100%;
-}
-
-/* On mouse-over, add a deeper shadow */
-/*.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-    transform: scale(1.2, 1.2) !important;
-}*/
-
-/* Add some padding inside the card container */
-.card > .overlay > .title > h4 {
-    position: absolute;
-    bottom: 26px;
-    left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 170%;
-    color: #eeffdd;
-}
-
-.card > .overlay > .subtitle > h4 {
-    position: absolute;
-    bottom: 5px;
-    left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 120%;
-    color: #cccccc;
-}
-
-.card > .overlay {
-    visibility: hidden;
-    position: absolute;
-    bottom: 7%;
-    float: left;
-    width: 92%;
-    height: 0%;
-    opacity: 0.8;
-    background-color: black;
-    transition: 0.2s ease-in-out;
-}
-
-.card:hover .overlay {
-    visibility: visible;
-    height: 26%;
-}
-
 #source-link {
     font-size: 130%;
     font-style: oblique;
@@ -117,9 +62,6 @@
 
     #project_video {
         height:100px;
-    }
-
-    #project_video {
         margin-top:20px;
     }
 }

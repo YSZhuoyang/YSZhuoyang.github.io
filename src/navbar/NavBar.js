@@ -86,7 +86,7 @@ class NavBar extends React.Component {
                 onChangeIndex={this.handleChangeIndex}
                 >
                     <Trace />
-                    <ProjGridList />
+                    <ProjGridList windowWidth={this.props.windowWidth} />
                     <AboutMe />
                 </SwipeableViews>
             </div>
