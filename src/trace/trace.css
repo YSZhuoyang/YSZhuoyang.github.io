@@ -5,3 +5,9 @@
     border-bottom-style: groove;
     border-color: rgb(220, 220, 220);
 }
+
+@media all and (max-width: 768px) {
+    .timeline-div {
+        height:800px;
+    }
+}
