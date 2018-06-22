@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import Status from './Status/Status';
 import NavBar from './navbar/NavBar';
 
 import './index.css';
 
-
-injectTapEventPlugin();
 
 class MainBody extends React.Component {
     constructor() {
