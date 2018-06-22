@@ -17,7 +17,7 @@ export default class AboutMe extends React.Component {
         return(
             <p id="email">
                 Email: 
-                <a className="email" href="mailto:sangzhouyang@student.unimelb.edu.au">
+                <a className="email about-me" href="mailto:sangzhouyang@student.unimelb.edu.au">
                 sangzhouyang@student.unimelb.edu.au
                 </a>
             </p>
@@ -78,11 +78,11 @@ export default class AboutMe extends React.Component {
                 </div>
                 
                 <div id="profile" >
-                    <h2>Go to my <a href="https://github.com/YSZhuoyang" target="_blank" rel="noopener noreferrer" >
+                    <h2>Go to my <a className="about-me" href="https://github.com/YSZhuoyang" target="_blank" rel="noopener noreferrer" >
                         <font color="#ccdd33">Github</font></a>
                     </h2>
 
-                    <h2>Go to my <a href="https://au.linkedin.com/in/yuszy" target="_blank" rel="noopener noreferrer">
+                    <h2>Go to my <a className="about-me" href="https://au.linkedin.com/in/yuszy" target="_blank" rel="noopener noreferrer">
                         <font color="#ccdd33">LinkedIn</font></a>
                     </h2>
                 </div>

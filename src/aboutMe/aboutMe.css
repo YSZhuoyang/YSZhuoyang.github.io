@@ -51,7 +51,7 @@ h2 span {
     font-weight: normal;
 }
 
-a {
+.about-me {
     color: #ccc;
     text-decoration: none;
     border-bottom: 1px dotted #dddddd;

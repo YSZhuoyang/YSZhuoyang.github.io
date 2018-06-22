@@ -63,24 +63,21 @@ class ProjDialog extends React.Component {
             onClose={this.handleClose}
             >
                 {
-                    tile.video !== '' ?
-                    <div>
-                        <iframe id="project_video"
+                    tile.video !== ''
+                        ? <iframe id="project_video"
                         title={tile.title}
                         src={tile.video}
                         frameBorder="0" allowFullScreen>
                         </iframe>
-                        <div className="clear"></div>
-                    </div>
-                    : <div/>
+                        : <div/>
                 }
-                
+
                 <div id="proj-brief-text">
                     <br />
                     {tile.brief}
                     <br /><br />
                 </div>
-                <a id="source-link" href={tile.href}>Source</a>
+                <p><a id="source-link" href={tile.href}>Source</a></p>
             </Modal>
         );
     }
