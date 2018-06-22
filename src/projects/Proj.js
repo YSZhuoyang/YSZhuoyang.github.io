@@ -88,26 +88,27 @@ class ProjDialog extends React.Component {
     render() {
         const { tile, classes, style } = this.props;
         
-        return (<GridListTile
-            key={tile.imgPath} cols={1} rows={1}
-            onClick={this.handleOpen}
-            style={style}
-            >
-            <img src={tile.imgPath} alt={tile.title} />
-            <GridListTileBar
-                title={tile.title}
-                titlePosition="top"
-                // actionIcon={
-                // <IconButton className={classes.icon}>
-                //     <StarBorderIcon />
-                // </IconButton>
-                // }
-                actionPosition="left"
-                className={classes.titleBar}
-            />
-            {this.renderDialog()}
-            </GridListTile>
-        );
+        return [
+            (<GridListTile
+                key={tile.imgPath} cols={1} rows={1}
+                onClick={this.handleOpen}
+                style={style}
+                >
+                <img src={tile.imgPath} alt={tile.title} />
+                <GridListTileBar
+                    title={tile.title}
+                    titlePosition="top"
+                    // actionIcon={
+                    // <IconButton className={classes.icon}>
+                    //     <StarBorderIcon />
+                    // </IconButton>
+                    // }
+                    actionPosition="left"
+                    className={classes.titleBar}
+                />
+            </GridListTile>),
+            this.renderDialog()
+        ];
 
     }
 }

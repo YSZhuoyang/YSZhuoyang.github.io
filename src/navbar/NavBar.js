@@ -19,7 +19,7 @@ const getStyles = theme => ({
         minWidth: 72
     },
     indicator: {
-        background: "#eeee44",
+        background: "#aaaa44",
         height: 4
     },
     label: {
