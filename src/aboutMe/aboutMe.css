@@ -7,12 +7,6 @@
     border-bottom: 1px solid #aaa;
 }
 
-@media all and (max-width: 768px) {
-    #pic {
-        width: 15%;
-    }
-}
-
 #about-me {
     max-width: 800px;
     margin: 40px auto 60px;
@@ -97,4 +91,14 @@ dd {
 #email {
     margin-top: 10px;
     line-height: 150%;
+}
+
+@media all and (max-width: 768px) {
+    #pic {
+        width: 15%;
+    }
+
+    #profile {
+        margin-top: 15px;
+    }
 }
