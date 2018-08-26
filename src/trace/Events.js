@@ -40,11 +40,11 @@ const events = [{
 	"title": "Brunswick",
 	"imageUrl": "./img/events/darkness.jpg"
 }, {
-	"date": Object(Date.parse("2018-4-28T07:00:00.000Z")),
+	"date": Object(Date.parse("2018-04-28T07:00:00.000Z")),
 	"title": "Brunswick",
 	"imageUrl": "./img/events/Jou Hisaishi Concert.jpg"
 }, {
-	"date": Object(Date.parse("2018-8-25T07:00:00.000Z")),
+	"date": Object(Date.parse("2018-08-25T07:00:00.000Z")),
 	"text": "Completed Deep Learning Specialization by Andrew Ng.",
 	"title": "Brunswick",
 	"imageUrl": "./img/events/ai.jpg"
