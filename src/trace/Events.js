@@ -41,6 +41,7 @@ const events = [{
 	"imageUrl": "./img/events/darkness.jpg"
 }, {
 	"date": Object(Date.parse("2018-04-28T07:00:00.000Z")),
+	"text": "",
 	"title": "Brunswick",
 	"imageUrl": "./img/events/Jou Hisaishi Concert.jpg"
 }, {
