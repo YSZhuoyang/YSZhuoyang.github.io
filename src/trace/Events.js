@@ -21,7 +21,7 @@ const events = [{
 	"imageUrl": "./img/events/haningoutwith614.jpg"
 }, {
 	"date": Object(Date.parse("2016-02-11T07:00:00.000Z")),
-	"text": "A brand new begining on Queensberry, my lovely new home.",
+	"text": "A brand new start at Queensberry St, my lovely new home.",
 	"title": "Queensberry, Melbourne",
 	"imageUrl": "./img/events/firstday614.jpg"
 }, {
@@ -41,7 +41,6 @@ const events = [{
 	"imageUrl": "./img/events/darkness.jpg"
 }, {
 	"date": Object(Date.parse("2018-4-28T07:00:00.000Z")),
-	// "text": ".",
 	"title": "Brunswick",
 	"imageUrl": "./img/events/Jou Hisaishi Concert.jpg"
 }, {
