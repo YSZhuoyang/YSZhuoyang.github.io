@@ -21,7 +21,7 @@ const events = [{
 	"imageUrl": "./img/events/haningoutwith614.jpg"
 }, {
 	"date": Object(Date.parse("2016-02-11T07:00:00.000Z")),
-	"text": "This is a brand new begining on Queensberry. My lovely new home.",
+	"text": "A brand new begining on Queensberry, my lovely new home.",
 	"title": "Queensberry, Melbourne",
 	"imageUrl": "./img/events/firstday614.jpg"
 }, {
@@ -39,6 +39,16 @@ const events = [{
 	"text": "Darkness is falling onto my desk...",
 	"title": "Brunswick",
 	"imageUrl": "./img/events/darkness.jpg"
+}, {
+	"date": Object(Date.parse("2018-4-28T07:00:00.000Z")),
+	// "text": ".",
+	"title": "Brunswick",
+	"imageUrl": "./img/events/Jou Hisaishi Concert.jpg"
+}, {
+	"date": Object(Date.parse("2018-8-25T07:00:00.000Z")),
+	"text": "Completed Deep Learning Specialization by Andrew Ng.",
+	"title": "Brunswick",
+	"imageUrl": "./img/events/ai.jpg"
 }];
 
 module.exports = events;

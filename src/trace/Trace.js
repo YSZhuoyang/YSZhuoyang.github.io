@@ -14,7 +14,7 @@ export default class Trace extends React.Component {
     render() {
         return (
 			<div className="timeline-div">
-				<Timeline events={events} customFooter={emptyfooter}/>
+				<Timeline events={events} reverseOrder={true} customFooter={emptyfooter}/>
 			</div>
         );
     }
