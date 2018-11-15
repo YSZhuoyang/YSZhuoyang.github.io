@@ -46,9 +46,14 @@ const events = [{
 	"imageUrl": "./img/events/Jou Hisaishi Concert.jpg"
 }, {
 	"date": Object(Date.parse("2018-08-25T07:00:00.000Z")),
-	"text": "Completed Deep Learning Specialization by Andrew Ng.",
+	"text": "My first milestone of online learning.",
 	"title": "Brunswick",
 	"imageUrl": "./img/events/ai.jpg"
+}, {
+	"date": Object(Date.parse("2018-11-15T07:00:00.000Z")),
+	"text": "I saw myself from it. Yet my mindset is like the cat now, wish it'll become like the Majo someday.",
+	"title": "Brunswick",
+	"imageUrl": "./img/events/mindset.jpg"
 }];
 
 module.exports = events;
