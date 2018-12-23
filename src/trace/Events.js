@@ -51,9 +51,14 @@ const events = [{
 	"imageUrl": "./img/events/ai.jpg"
 }, {
 	"date": Object(Date.parse("2018-11-15T07:00:00.000Z")),
-	"text": "I saw myself from it. Yet my mindset is like the cat now, wish it'll become like the Majo someday.",
+	"text": "I see myself from it. Yet my mindset is like the cat now, wish it'll become like the Majo someday.",
 	"title": "Brunswick",
 	"imageUrl": "./img/events/mindset.jpg"
+}, {
+	"date": Object(Date.parse("2018-12-23T07:00:00.000Z")),
+	"text": "My last achievement in the year of 2018.",
+	"title": "Brunswick",
+	"imageUrl": "./img/events/algorithms.jpg"
 }];
 
 module.exports = events;
