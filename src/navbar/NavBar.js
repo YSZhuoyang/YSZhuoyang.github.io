@@ -67,11 +67,11 @@ class NavBar extends React.Component {
                         root: classes.tabRoot,
                         label: classes.label
                     }} label="My Trace" value={0} />
-                    <Tab
+                    {/* <Tab
                     classes={{
                         root: classes.tabRoot,
                         label: classes.label
-                    }} label="My Work" value={1} />
+                    }} label="My Work" value={1} /> */}
                     <Tab
                     classes={{
                         root: classes.tabRoot,
