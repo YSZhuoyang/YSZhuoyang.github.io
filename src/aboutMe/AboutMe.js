@@ -159,7 +159,7 @@ function renderIDPhoto() {
 
 function renderEmail() {
   return (
-    <p id="email">
+    <p>
       Email:
       <StyledEmailA href="mailto:sangzhuoyangy@gmail.com">
         sangzhuoyangy@gmail.com
@@ -170,7 +170,7 @@ function renderEmail() {
 
 function renderInterests() {
   return (
-    <StyledInterestsDiv id="interests">
+    <StyledInterestsDiv>
       <StyledDt>My Favorites</StyledDt>
       <StyledDd>
         <StyledH2>Food</StyledH2>
