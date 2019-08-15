@@ -17,8 +17,8 @@ export default class AboutMe extends React.Component {
         return(
             <p id="email">
                 Email: 
-                <a className="email about-me" href="mailto:sangzhouyang@student.unimelb.edu.au">
-                sangzhouyang@student.unimelb.edu.au
+                <a className="email about-me" href="mailto:sangzhuoyangy@gmail.com">
+                sangzhuoyangy@gmail.com
                 </a>
             </p>
         );
