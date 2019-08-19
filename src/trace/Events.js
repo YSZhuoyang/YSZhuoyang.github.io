@@ -73,6 +73,12 @@ const events = [
     text: "My last achievement in the year of 2018.",
     title: "Brunswick",
     imageUrl: "./img/events/algorithms.jpg"
+  },
+  {
+    date: new Date("2019-08-19T07:00:00.000Z"),
+    text: "It's been 3 years since last visit.",
+    title: "Darling Harbour, Sydney",
+    imageUrl: "./img/events/sydney 2nd visit.jpeg"
   }
 ];
 
