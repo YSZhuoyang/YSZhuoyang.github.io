@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import styled from "styled-components";
 import Timeline from "react-image-timeline";
 import events from "./Events.js";
+
 import "react-image-timeline/dist/timeline.css";
 
 const emptyfooter = props => <></>;
