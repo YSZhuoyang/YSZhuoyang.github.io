@@ -79,6 +79,12 @@ const events = [
     text: "It's been 3 years since last visit.",
     title: "Darling Harbour, Sydney",
     imageUrl: "./img/events/sydney 2nd visit.jpeg"
+  },
+  {
+    date: new Date("2019-09-23T07:00:00.000Z"),
+    text: "A good day.",
+    title: "CBD, Melbourne",
+    imageUrl: "./img/events/a good day.jpeg"
   }
 ];
 
