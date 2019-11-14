@@ -1,58 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 
-import Status from './Status/Status';
-import NavBar from './navbar/NavBar';
-
-import './index.css';
+import Status from './status/Status';
+import TabView from './tabView/TabView';
 
 
-class MainBody extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            windowWidth: window.innerWidth,
-            windowHeight: window.innerHeight
-        };
-        this.updateDimensions = this.updateDimensions.bind(this);
+const TabContainer = styled.div`
+    padding-top: 27%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: auto;
+    color: #eeeeee;
+
+    @media (max-width: 768px) {
+        && {
+            font-size: 80%;
+        }
     }
+`;
 
-    updateDimensions() {
-        this.setState({
-            windowWidth: window.innerWidth,
-            windowHeight: window.innerHeight
-        });
-    }
+const Body = styled.div`
+    background-image: url("img/background.jpeg");
+    background-size: 100% 100%;
+`;
 
-    componentWillMount() {
-        this.updateDimensions();
-    }
+const RootView = () => {
+    return (
+        <Body>
+            <Status />
 
-    componentDidMount() {
-        window.addEventListener("resize", this.updateDimensions);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updateDimensions);
-    }
-
-    render() {
-        return(
-            <div>
-                <Status />
-
-                <div className="tab-body">
-                    <NavBar
-                    windowWidth={this.state.windowWidth}
-                    windowHeight={this.state.windowHeight} />
-                </div>
-            </div>
-        );
-    }
+            <TabContainer>
+                <TabView />
+            </TabContainer>
+        </Body>
+    );
 }
 
 ReactDOM.render(
-    <MainBody />,
+    <RootView />,
     document.getElementById('my-body')
 );
-
