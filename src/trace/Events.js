@@ -64,7 +64,7 @@ const events = [
   {
     date: new Date("2018-11-15T07:00:00.000Z"),
     text:
-      "I see myself from it. Yet my mindset is like the cat now, wish it'll become like the Majo someday.",
+      "I see myself from it.",
     title: "Brunswick",
     imageUrl: "./img/events/mindset.jpg"
   },
