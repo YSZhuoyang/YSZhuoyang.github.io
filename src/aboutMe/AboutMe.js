@@ -2,15 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const IMAGE_ID_PATH = "./img/ids/ID.jpg";
-const IMAGE_FAVORITE_GAME_PATH = "./img/my_favorite_game.png";
+const GIT_ICON_PATH = "./img/git-icon.png";
 
 const StyledTextImg = styled.img`
-  width: 120px;
-  height: 25px;
+  margin-top: -10px;
+  width: 60px;
+  height: 60px;
 
   @media (max-width: 768px) {
-    width: 65%;
-    height: 65%;
+    width: 45px;
+    height: 45px;
   }
 `;
 
@@ -30,25 +31,10 @@ const StyledRootDiv = styled.div`
   font-family: "Arial", Georgia, Serif;
 `;
 
-const StyledDt = styled.dt`
-  padding: 0 0 0 0;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 150%;
-  width: 40%;
-  float: left;
-`;
-
-const StyledDd = styled.dd`
-  width: 60%;
-  float: right;
-`;
-
 const StyledProfileDiv = styled.div`
   width: 75%;
   margin-top: 50px;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
   align-items: flex-end;
   font-style: italic;
@@ -74,16 +60,6 @@ const StyledEmailA = styled.a`
   border-bottom: 1px dotted #dddddd;
 `;
 
-const StyledAboutMeA = styled.a`
-  color: #ccc;
-  text-decoration: none;
-  border-bottom: 1px dotted #dddddd;
-`;
-
-const StyledUl = styled.ul`
-  margin: 0 0 18px 0px;
-`;
-
 const StyledH1 = styled.h1`
   margin: 0 0 16px 0;
   padding: 0 0 16px 0;
@@ -100,21 +76,7 @@ const StyledH2 = styled.h2`
   color: #ffffff;
 `;
 
-// Overwrite react-image-timeline style
-const StyledLi = styled.li`
-  margin-top: 0px !important;
-`;
-
-const StyledImageLi = styled.li`
-  margin-top: 0px !important;
-  width: 120px;
-`;
-
-const StyledInterestsDiv = styled.div`
-  margin-top: 20px;
-`;
-
-export default React.memo(props => (
+export default React.memo(() => (
   <StyledRootDiv>
     {renderIDPhoto()}
     <div id="contact-info" className="vcard">
@@ -125,31 +87,17 @@ export default React.memo(props => (
     <StyledProfileDiv>
       <StyledH2>
         Go to my{" "}
-        <StyledAboutMeA
-          href="https://github.com/YSZhuoyang"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <font color="#ccdd33">Github</font>
-        </StyledAboutMeA>
-      </StyledH2>
+        <a href="https://github.com/YSZhuoyang">
+          <StyledTextImg
+            src={GIT_ICON_PATH}
+            alt="My git"
 
-      <StyledH2>
-        Go to my{" "}
-        <StyledAboutMeA
-          href="https://au.linkedin.com/in/yuszy"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <font color="#ccdd33">LinkedIn</font>
-        </StyledAboutMeA>
+          />
+        </a>
       </StyledH2>
     </StyledProfileDiv>
 
     <StyledClearDiv />
-
-    <dl>{renderInterests()}</dl>
-    <br />
   </StyledRootDiv>
 ));
 
@@ -165,52 +113,5 @@ function renderEmail() {
         sangzhuoyangy@gmail.com
       </StyledEmailA>
     </p>
-  );
-}
-
-function renderInterests() {
-  return (
-    <StyledInterestsDiv>
-      <StyledDt>My Favorites</StyledDt>
-      <StyledDd>
-        <StyledH2>Food</StyledH2>
-        <StyledUl>
-          <StyledLi>Fried eggs</StyledLi>
-          <StyledLi>Tomatoes</StyledLi>
-          <StyledLi>Steak</StyledLi>
-          <StyledLi>Yoghurt</StyledLi>
-        </StyledUl>
-
-        <StyledH2>Anime</StyledH2>
-        <StyledUl>
-          <StyledLi>るろうに剣心</StyledLi>
-          <StyledLi>いぬやしゃ</StyledLi>
-          <StyledLi>ドラゴンボール</StyledLi>
-        </StyledUl>
-
-        <StyledH2>Programming Languages</StyledH2>
-        <StyledUl>
-          <StyledLi>Golang</StyledLi>
-          <StyledLi>Cuda</StyledLi>
-          <StyledLi>Typescript</StyledLi>
-        </StyledUl>
-
-        <StyledH2>Sports</StyledH2>
-        <StyledUl>
-          <StyledLi>Tennis</StyledLi>
-        </StyledUl>
-
-        <StyledH2>Games</StyledH2>
-        <StyledUl>
-          <StyledImageLi>
-            <StyledTextImg
-              src={IMAGE_FAVORITE_GAME_PATH}
-              alt="My favorite game"
-            />
-          </StyledImageLi>
-          <StyledLi>Need for speed</StyledLi>
-        </StyledUl>
-      </StyledDd>
-    </StyledInterestsDiv>
   );
 }
