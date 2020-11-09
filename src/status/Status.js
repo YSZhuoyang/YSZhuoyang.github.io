@@ -14,7 +14,7 @@ const DateDiv = styled.div`
     font-family: Georgia, serif;
     color: #66bbbb;
     position: absolute;
-    padding-top: 4%;
+    padding-top: 10%;
     padding-left: 3%;
     text-align: center;
     width: 25%;
@@ -64,11 +64,6 @@ export default memo(() => {
     return (
       <StatusDiv>
           <DateDiv>{months[month] + " " + day}</DateDiv>
-          <NewsText
-              href="http://www.crunchyroll.com/anime-news/2016/12/01/rurouni-kenshin-manga-heads-north-for-new-spin-off"
-          >
-              Rurouni Kenshin: Hokkaido Arc Manga announced!
-          </NewsText>
       </StatusDiv>
     );
 });

@@ -85,6 +85,12 @@ const events = [
     text: "A good day.",
     title: "CBD, Melbourne",
     imageUrl: "./img/events/a good day.jpeg"
+  },
+  {
+    date: new Date("2020-11-08T07:00:00.000Z"),
+    text: "A day of post-lockdown.",
+    title: "Jells Park, Melbourne",
+    imageUrl: "./img/events/post lockdown.jpeg"
   }
 ];
 
