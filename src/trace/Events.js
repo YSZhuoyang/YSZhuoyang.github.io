@@ -26,7 +26,7 @@ const events = [
   },
   {
     date: new Date("2016-02-11T07:00:00.000Z"),
-    text: "A brand new start at Queensberry St, my lovely new home.",
+    text: "A brand new start at Queensberry St.",
     title: "Queensberry, Melbourne",
     imageUrl: "./img/events/firstday614.jpg"
   },
@@ -52,7 +52,7 @@ const events = [
   {
     date: new Date("2018-04-28T07:00:00.000Z"),
     text: "",
-    title: "Brunswick",
+    title: "Arts Centre Melbourne",
     imageUrl: "./img/events/Jou Hisaishi Concert.jpg"
   },
   {
