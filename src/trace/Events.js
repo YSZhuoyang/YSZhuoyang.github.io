@@ -93,7 +93,7 @@ const events = [
     imageUrl: "./img/events/post lockdown.jpeg"
   },
   {
-    date: new Date("2021-01-08T07:00:00.000Z"),
+    date: new Date("2021-04-03T07:00:00.000Z"),
     text: "Second City.",
     title: "Art Gallery of NSW, Sydney",
     imageUrl: "./img/events/first hanging out in NSW.jpeg"
