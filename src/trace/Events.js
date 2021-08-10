@@ -94,9 +94,15 @@ const events = [
   },
   {
     date: new Date("2021-04-03T07:00:00.000Z"),
-    text: "Second City.",
+    text: "Settled.",
     title: "Art Gallery of NSW, Sydney",
     imageUrl: "./img/events/first hanging out in NSW.jpeg"
+  },
+  {
+    date: new Date("2021-06-05T07:00:00.000Z"),
+    text: "Second City.",
+    title: "Taronga Zoo, Sydney",
+    imageUrl: "./img/events/second city.jpg"
   }
 ];
 
