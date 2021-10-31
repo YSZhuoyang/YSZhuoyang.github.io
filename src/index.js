@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components';
+import { styled } from '@mui/material/styles';
 
 import Status from './status/Status';
 import TabView from './tabView/TabView';
 
 
-const TabContainer = styled.div`
+const TabContainer = styled('div')`
     padding-top: 27%;
     margin-right: auto;
     margin-left: auto;
@@ -21,7 +21,7 @@ const TabContainer = styled.div`
     }
 `;
 
-const Body = styled.div`
+const Body = styled('div')`
     background-image: url("img/background.jpeg");
     background-size: 100% 100%;
 `;

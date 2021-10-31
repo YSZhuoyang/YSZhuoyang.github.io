@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
+import { styled } from '@mui/material/styles';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 import SwipeableViews from "react-swipeable-views";
 import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 
 import AboutMe from "../aboutMe/AboutMe";
 import Trace from "../trace/Trace";
@@ -13,33 +12,34 @@ const StyledTab = styled(Tab)`
     && {
         flex: 1;
         font-size: 20px;
+        color: #999999;
 
         @media (max-width: 768px) {
           font-size: 14px;
         }
+
+        &.Mui-selected {
+            color: #ddddbb;
+        }
     }
 `;
 
-const getStyles = theme => ({
-    indicator: {
-        background: "#aaaa44",
-        height: 4
-    }
-});
 
-const TabView = props => {
-    const { classes } = props;
+const TabView = () => {
     const [tabId, setTabId] = useState(0);
-    const handleChange = (_, value) => setTabId(value);
+    const onTabSwitch = (_, value) => setTabId(value);
     const handleChangeIndex = index => setTabId(index);
 
     return (
         <div>
             <Tabs
                 value={tabId}
-                onChange={handleChange}
-                classes={{
-                  indicator: classes.indicator
+                onChange={onTabSwitch}
+                TabIndicatorProps={{
+                    style: {
+                        height:"3px",
+                        background: "#bbbb88"
+                    }
                 }}
                 centered
             >
@@ -61,7 +61,7 @@ const TabView = props => {
 }
 
 TabView.propTypes = {
-  classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired
 };
 
-export default withStyles(getStyles)(TabView);
+export default TabView;

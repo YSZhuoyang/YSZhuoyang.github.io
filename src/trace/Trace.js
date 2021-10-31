@@ -1,13 +1,13 @@
 import React, { memo } from "react";
-import styled from "styled-components";
+import { styled } from '@mui/material/styles';
 import Timeline from "react-image-timeline";
 import events from "./Events.js";
 
 import "react-image-timeline/dist/timeline.css";
 
-const emptyfooter = props => <></>;
+const emptyfooter = () => <></>;
 
-const StyledTimelineDiv = styled.div`
+const StyledTimelineDiv = styled('div')`
   height: 1200px;
   overflow-y: scroll;
   border-bottom-style: groove;
@@ -24,7 +24,7 @@ const StyledTimelineDiv = styled.div`
   }
 `;
 
-export default memo(props => (
+export default memo(() => (
   <StyledTimelineDiv>
     <Timeline
       events={events}

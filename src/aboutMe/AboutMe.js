@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import { styled } from '@mui/material/styles';
 
 const IMAGE_ID_PATH = "./img/ids/ID.jpg";
 const GIT_ICON_PATH = "./img/git-icon.png";
 
-const StyledTextImg = styled.img`
+const StyledTextImg = styled('img')`
   margin-top: -10px;
   width: 60px;
   height: 60px;
@@ -15,7 +15,7 @@ const StyledTextImg = styled.img`
   }
 `;
 
-const StyledImg = styled.img`
+const StyledImg = styled('img')`
   float: right;
   margin: -30px 0 0 0;
   width: 22%;
@@ -25,13 +25,13 @@ const StyledImg = styled.img`
   }
 `;
 
-const StyledRootDiv = styled.div`
+const StyledRootDiv = styled('div')`
   max-width: 800px;
   margin: 40px auto 60px;
   font-family: "Arial", Georgia, Serif;
 `;
 
-const StyledProfileDiv = styled.div`
+const StyledProfileDiv = styled('div')`
   width: 75%;
   margin-top: 50px;
   display: flex;
@@ -44,7 +44,7 @@ const StyledProfileDiv = styled.div`
   }
 `;
 
-const StyledClearDiv = styled.div`
+const StyledClearDiv = styled('div')`
   clear: both;
   float: none;
   height: 15px;
@@ -52,7 +52,7 @@ const StyledClearDiv = styled.div`
   border-bottom: 1px solid #aaa;
 `;
 
-const StyledEmailA = styled.a`
+const StyledEmailA = styled('a')`
   color: #ccc;
   margin-top: 10px;
   line-height: 150%;
@@ -60,7 +60,7 @@ const StyledEmailA = styled.a`
   border-bottom: 1px dotted #dddddd;
 `;
 
-const StyledH1 = styled.h1`
+const StyledH1 = styled('h1')`
   margin: 0 0 16px 0;
   padding: 0 0 16px 0;
   font-weight: bold;
@@ -69,7 +69,7 @@ const StyledH1 = styled.h1`
 `;
 
 // Overwrite react-image-timeline style
-const StyledH2 = styled.h2`
+const StyledH2 = styled('h2')`
   font-size: 160% !important;
   margin: 5px 0 5px 0 !important;
   position: relative;

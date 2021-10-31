@@ -1,7 +1,7 @@
 import React, { memo } from "react";
-import styled from 'styled-components';
+import { styled } from '@mui/material/styles';
 
-const StatusDiv = styled.div`
+const StatusDiv = styled('div')`
     position: relative;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@ const StatusDiv = styled.div`
     height: 25%;
 `;
 
-const DateDiv = styled.div`
+const DateDiv = styled('div')`
     font-size: 50px;
     font-family: Georgia, serif;
     color: #66bbbb;
@@ -25,7 +25,7 @@ const DateDiv = styled.div`
     }
 `;
 
-const NewsText = styled.a`
+const NewsText = styled('a')`
     font-size: 26px;
     font-family: Georgia, serif;
     color: #bbeebb;
