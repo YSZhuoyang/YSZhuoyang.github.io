@@ -12,7 +12,7 @@ const StyledTab = styled(Tab)`
     && {
         flex: 1;
         font-size: 20px;
-        color: #999999;
+        color: #aaaaaa;
 
         @media (max-width: 768px) {
           font-size: 14px;
