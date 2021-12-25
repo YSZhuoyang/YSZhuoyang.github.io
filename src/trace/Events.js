@@ -93,6 +93,12 @@ const events = [
     imageUrl: "./img/events/post lockdown.jpeg"
   },
   {
+    date: new Date("2021-02-15T07:00:00.000Z"),
+    text: "Sweet.",
+    title: "Ashfield, Sydney",
+    imageUrl: "./img/events/gift from canva.jpg"
+  },
+  {
     date: new Date("2021-04-03T07:00:00.000Z"),
     text: "Settled.",
     title: "Art Gallery of NSW, Sydney",
