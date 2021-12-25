@@ -5,22 +5,22 @@ const IMAGE_ID_PATH = "./img/ids/ID.png";
 const GIT_ICON_PATH = "./img/git-icon.png";
 
 const StyledGitImg = styled('img')`
-  width: 47px;
-  height: 47px;
+  width: 45px;
+  height: 45px;
 
   @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 `;
 
-const StyledImg = styled('img')`
+const StyledIDImg = styled('img')`
   float: right;
   margin: -30px 0 0 0;
   width: 25%;
 
   @media (max-width: 768px) {
-    width: 20%;
+    margin: -18px 0 0 0;
   }
 `;
 
@@ -51,6 +51,14 @@ const StyledClearDiv = styled('div')`
   border-bottom: 1px solid #aaa;
 `;
 
+const StyledDescriptionP = styled('p')`
+  margin-left: 2px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+`;
+
 const StyledEmailA = styled('a')`
   color: #ccc;
   margin-top: 10px;
@@ -59,12 +67,16 @@ const StyledEmailA = styled('a')`
   border-bottom: 1px dotted #dddddd;
 `;
 
-const StyledH1 = styled('h1')`
+const StyledNameH1 = styled('h1')`
   margin: 0 0 16px 0;
   padding: 0 0 16px 0;
   font-weight: bold;
   letter-spacing: -2px;
   border-bottom: 1px solid #aaa;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 // Overwrite react-image-timeline style
@@ -77,16 +89,16 @@ const StyledH2 = styled('h2')`
 
 export default React.memo(() => (
   <StyledRootDiv>
-    <StyledImg src={IMAGE_ID_PATH} alt="My id" />
+    <StyledIDImg src={IMAGE_ID_PATH} alt="My id" />
 
     <div id="contact-info" className="vcard">
-      <StyledH1 className="fn">Oscar Yu</StyledH1>
-      <p>
+      <StyledNameH1 className="fn">Oscar Yu</StyledNameH1>
+      <StyledDescriptionP>
         Email:
         <StyledEmailA href="mailto:sangzhuoyangy@gmail.com">
           sangzhuoyangy@gmail.com
         </StyledEmailA>
-      </p>
+      </StyledDescriptionP>
     </div>
 
     <StyledProfileDiv>
