@@ -1,24 +1,23 @@
 import React from "react";
 import { styled } from '@mui/material/styles';
 
-const IMAGE_ID_PATH = "./img/ids/ID.jpg";
+const IMAGE_ID_PATH = "./img/ids/ID.png";
 const GIT_ICON_PATH = "./img/git-icon.png";
 
-const StyledTextImg = styled('img')`
-  margin-top: -10px;
-  width: 60px;
-  height: 60px;
+const StyledGitImg = styled('img')`
+  width: 47px;
+  height: 47px;
 
   @media (max-width: 768px) {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 `;
 
 const StyledImg = styled('img')`
   float: right;
   margin: -30px 0 0 0;
-  width: 22%;
+  width: 25%;
 
   @media (max-width: 768px) {
     width: 20%;
@@ -36,7 +35,7 @@ const StyledProfileDiv = styled('div')`
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   font-style: italic;
 
   @media (max-width: 768px) {
@@ -78,20 +77,24 @@ const StyledH2 = styled('h2')`
 
 export default React.memo(() => (
   <StyledRootDiv>
-    {renderIDPhoto()}
+    <StyledImg src={IMAGE_ID_PATH} alt="My id" />
+
     <div id="contact-info" className="vcard">
       <StyledH1 className="fn">Oscar Yu</StyledH1>
-      {renderEmail()}
+      <p>
+        Email:
+        <StyledEmailA href="mailto:sangzhuoyangy@gmail.com">
+          sangzhuoyangy@gmail.com
+        </StyledEmailA>
+      </p>
     </div>
 
     <StyledProfileDiv>
       <StyledH2>
-        Go to my{" "}
         <a href="https://github.com/YSZhuoyang">
-          <StyledTextImg
+          <StyledGitImg
             src={GIT_ICON_PATH}
             alt="My git"
-
           />
         </a>
       </StyledH2>
@@ -100,18 +103,3 @@ export default React.memo(() => (
     <StyledClearDiv />
   </StyledRootDiv>
 ));
-
-function renderIDPhoto() {
-  return <StyledImg src={IMAGE_ID_PATH} alt="My id" />;
-}
-
-function renderEmail() {
-  return (
-    <p>
-      Email:
-      <StyledEmailA href="mailto:sangzhuoyangy@gmail.com">
-        sangzhuoyangy@gmail.com
-      </StyledEmailA>
-    </p>
-  );
-}
