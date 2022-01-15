@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-20.04
 
     steps:
@@ -33,3 +32,4 @@ jobs:
         BRANCH: master
         FOLDER: build
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      if: github.event_name != 'pull_request'
