@@ -109,6 +109,11 @@ const events = [
     text: "Second City.",
     title: "Taronga Zoo, Sydney",
     imageUrl: "./img/events/second city.jpg"
+  },
+  {
+    date: new Date("2022-08-28T07:00:00.000Z"),
+    title: "Bombo Beach, Kiama",
+    imageUrl: "./img/events/Bombo Beach.jpg"
   }
 ];
 
