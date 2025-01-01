@@ -1,29 +1,13 @@
+'use client'
+
 import React, { useState } from "react";
-import { styled } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import SwipeableViews from "react-swipeable-views";
 import PropTypes from "prop-types";
 
 import AboutMe from "../aboutMe/AboutMe";
 import Trace from "../trace/Trace";
-
-const StyledTab = styled(Tab)`
-    && {
-        flex: 1;
-        font-size: 20px;
-        color: #aaaaaa;
-
-        @media (max-width: 768px) {
-          font-size: 14px;
-        }
-
-        &.Mui-selected {
-            color: #ddddbb;
-        }
-    }
-`;
-
+import StyledTab from "./StyledTab";
 
 const TabView = () => {
     const [tabId, setTabId] = useState(0);

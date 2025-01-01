@@ -87,31 +87,33 @@ const StyledH2 = styled('h2')`
   color: #ffffff;
 `;
 
-export default React.memo(() => (
-  <StyledRootDiv>
-    <StyledIDImg src={IMAGE_ID_PATH} alt="My id" />
+export default React.memo(function AboutMe() {
+  return (
+    <StyledRootDiv>
+      <StyledIDImg src={IMAGE_ID_PATH} alt="My id" />
 
-    <div id="contact-info" className="vcard">
-      <StyledNameH1 className="fn">Oscar Yu</StyledNameH1>
-      <StyledDescriptionP>
-        Email:
-        <StyledEmailA href="mailto:sangzhuoyangy@gmail.com">
-          sangzhuoyangy@gmail.com
-        </StyledEmailA>
-      </StyledDescriptionP>
-    </div>
+      <div id="contact-info" className="vcard">
+        <StyledNameH1 className="fn">Oscar Yu</StyledNameH1>
+        <StyledDescriptionP>
+          Email:
+          <StyledEmailA href="mailto:sangzhuoyangy@gmail.com">
+            sangzhuoyangy@gmail.com
+          </StyledEmailA>
+        </StyledDescriptionP>
+      </div>
 
-    <StyledProfileDiv>
-      <StyledH2>
-        <a href="https://github.com/YSZhuoyang">
-          <StyledGitImg
-            src={GIT_ICON_PATH}
-            alt="My git"
-          />
-        </a>
-      </StyledH2>
-    </StyledProfileDiv>
+      <StyledProfileDiv>
+        <StyledH2>
+          <a href="https://github.com/YSZhuoyang">
+            <StyledGitImg
+              src={GIT_ICON_PATH}
+              alt="My git"
+            />
+          </a>
+        </StyledH2>
+      </StyledProfileDiv>
 
-    <StyledClearDiv />
-  </StyledRootDiv>
-));
+      <StyledClearDiv />
+    </StyledRootDiv>
+  );
+});

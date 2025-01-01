@@ -24,12 +24,14 @@ const StyledTimelineDiv = styled('div')`
   }
 `;
 
-export default memo(() => (
-  <StyledTimelineDiv>
-    <Timeline
-      events={events}
-      reverseOrder={true}
-      customComponents={{ footer: emptyfooter }}
-    />
-  </StyledTimelineDiv>
-));
+export default memo(function Trace() {
+  return (
+    <StyledTimelineDiv>
+      <Timeline
+        events={events}
+        reverseOrder={true}
+        customComponents={{ footer: emptyfooter }}
+      />
+    </StyledTimelineDiv>
+  );
+});
