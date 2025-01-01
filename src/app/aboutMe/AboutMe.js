@@ -25,6 +25,7 @@ const StyledIDImg = styled('img')`
 `;
 
 const StyledRootDiv = styled('div')`
+  height: 70vw;
   max-width: 800px;
   margin: 40px auto 60px;
   font-family: "Arial", Georgia, Serif;

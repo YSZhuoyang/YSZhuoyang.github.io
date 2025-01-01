@@ -38,7 +38,7 @@ export default memo(function AlternateTimeline() {
             return (
               <TimelineItem key={index}>
                 <TimelineOppositeContent color="text.secondary">
-                  <img src={imageUrl} width="500" height="200"></img>
+                  <img src={imageUrl} width="70%"></img>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot />
