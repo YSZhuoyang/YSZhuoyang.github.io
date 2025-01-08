@@ -602,29 +602,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/core-downloads-tracker@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "@mui/core-downloads-tracker@npm:6.3.0"
-  checksum: 10c0/56a421866c727a7c785247212a5f04cb5dd8a2b46b2badce5065ea8d6eb04e5ac8b4f981d4c33beebd866d803ea87328a79ec9baeba32611275f9805ceb0a074
+"@mui/core-downloads-tracker@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "@mui/core-downloads-tracker@npm:6.3.1"
+  checksum: 10c0/a996ad8db6bd8c981c4e2e2d243526c838dd29f0bbe7dc5ab6933be357e41f748781d322b1decf79ae1c9abba24190162559d84deedcb7c8824a68754dddf216
   languageName: node
   linkType: hard
 
-"@mui/lab@npm:6.0.0-beta.21":
-  version: 6.0.0-beta.21
-  resolution: "@mui/lab@npm:6.0.0-beta.21"
+"@mui/lab@npm:6.0.0-beta.22":
+  version: 6.0.0-beta.22
+  resolution: "@mui/lab@npm:6.0.0-beta.22"
   dependencies:
     "@babel/runtime": "npm:^7.26.0"
     "@mui/base": "npm:5.0.0-beta.68"
-    "@mui/system": "npm:^6.3.0"
-    "@mui/types": "npm:^7.2.20"
-    "@mui/utils": "npm:^6.3.0"
+    "@mui/system": "npm:^6.3.1"
+    "@mui/types": "npm:^7.2.21"
+    "@mui/utils": "npm:^6.3.1"
     clsx: "npm:^2.1.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     "@emotion/react": ^11.5.0
     "@emotion/styled": ^11.3.0
-    "@mui/material": ^6.3.0
-    "@mui/material-pigment-css": ^6.3.0
+    "@mui/material": ^6.3.1
+    "@mui/material-pigment-css": ^6.3.1
     "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -637,19 +637,19 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/087c92c7e778b2624080d797874f2071558179bbe78eefb8711bdc08fc89f94f0053921eb9e3075028344176479b0221bc53f7f3b1281c4b1657d1516a553191
+  checksum: 10c0/6a8ed73a59a3f5adfad715f991b694f9f77f7546c4194c434a8f38a5f015fb5682d7b0972aef8723e576de3512affcd5e5b85127d07f2878f619e697f14c4f73
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "@mui/material@npm:6.3.0"
+"@mui/material@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "@mui/material@npm:6.3.1"
   dependencies:
     "@babel/runtime": "npm:^7.26.0"
-    "@mui/core-downloads-tracker": "npm:^6.3.0"
-    "@mui/system": "npm:^6.3.0"
-    "@mui/types": "npm:^7.2.20"
-    "@mui/utils": "npm:^6.3.0"
+    "@mui/core-downloads-tracker": "npm:^6.3.1"
+    "@mui/system": "npm:^6.3.1"
+    "@mui/types": "npm:^7.2.21"
+    "@mui/utils": "npm:^6.3.1"
     "@popperjs/core": "npm:^2.11.8"
     "@types/react-transition-group": "npm:^4.4.12"
     clsx: "npm:^2.1.1"
@@ -660,7 +660,7 @@ __metadata:
   peerDependencies:
     "@emotion/react": ^11.5.0
     "@emotion/styled": ^11.3.0
-    "@mui/material-pigment-css": ^6.3.0
+    "@mui/material-pigment-css": ^6.3.1
     "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -673,16 +673,16 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/9a21ea88e79e19105916db8df1e2da95f5216dd57678000992d2bdfaa611772acd28c085fd058b474cfc846363b2165a9e587f9100bfd142edefffa4762323f8
+  checksum: 10c0/7fb91acd9bc021dde78e70d495a2abd69d0e2df35e526e0730e060c3177bb10cc3058ee27c72b5ec9bc7622d9c2ef99831b89f511f6700bc3717f979e2cb0152
   languageName: node
   linkType: hard
 
-"@mui/private-theming@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "@mui/private-theming@npm:6.3.0"
+"@mui/private-theming@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "@mui/private-theming@npm:6.3.1"
   dependencies:
     "@babel/runtime": "npm:^7.26.0"
-    "@mui/utils": "npm:^6.3.0"
+    "@mui/utils": "npm:^6.3.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -690,13 +690,13 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/57d0b429914b6095b3605e99ea2c23b8ad834220426bed6938ef60b2f8eaaa2fbf800ffdfcf6e59b88e74900adb60a9c1f5ea25338b2254e1530e0bf7ee04f1f
+  checksum: 10c0/aafaca0d7e5fd4d83c2cade28b7de554c0d848595f8f23f26c8f7daf3fc664053c9c81342d44d24e0a04a4813b58d6f0c1d135ae2775380acda91468a21f9684
   languageName: node
   linkType: hard
 
-"@mui/styled-engine@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "@mui/styled-engine@npm:6.3.0"
+"@mui/styled-engine@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "@mui/styled-engine@npm:6.3.1"
   dependencies:
     "@babel/runtime": "npm:^7.26.0"
     "@emotion/cache": "npm:^11.13.5"
@@ -713,19 +713,19 @@ __metadata:
       optional: true
     "@emotion/styled":
       optional: true
-  checksum: 10c0/840053c3dedcd2299e713839e2fae3fad5faa943c491bf54e513ae0c68d3dec7acef8e234e1632b89de4bcb2bdf9fe08553faf89f85ae2cd8588ca197d0ecd55
+  checksum: 10c0/81bbf8f2016b1c7debbbaab1a44ebaf8e494e8c9d32d2201b28f8c653a082177f6570fef779bf835bad1a9120af219a64b1d7a9a8a569c9c07045f00affe6b87
   languageName: node
   linkType: hard
 
-"@mui/system@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "@mui/system@npm:6.3.0"
+"@mui/system@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "@mui/system@npm:6.3.1"
   dependencies:
     "@babel/runtime": "npm:^7.26.0"
-    "@mui/private-theming": "npm:^6.3.0"
-    "@mui/styled-engine": "npm:^6.3.0"
-    "@mui/types": "npm:^7.2.20"
-    "@mui/utils": "npm:^6.3.0"
+    "@mui/private-theming": "npm:^6.3.1"
+    "@mui/styled-engine": "npm:^6.3.1"
+    "@mui/types": "npm:^7.2.21"
+    "@mui/utils": "npm:^6.3.1"
     clsx: "npm:^2.1.1"
     csstype: "npm:^3.1.3"
     prop-types: "npm:^15.8.1"
@@ -741,7 +741,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/ee50e38919b3f86fbd6978d06959189a5903223156c1355bc0ff251d553f2eda8ffafe2fa006da2e00e12947f6c8efd7f796bbb6cc5c472106400c2ed8e6dd1e
+  checksum: 10c0/49613b001f7e60c7ed70f3e2ee3ffc4f3a2719509e4f9ec18faf73a354597b8d894d0ee8861bf3a5b5db763efca36bcfb75989505c88e009c1627b114bac88ef
   languageName: node
   linkType: hard
 
@@ -754,6 +754,18 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 10c0/257285386903fe0705ac6d53d0ece700323b7bc9be5239ab448b2c6523965b3cadbb636f2aec8ff60354180f53daf78df687d6828a75ad220b0f71fb5a117b5e
+  languageName: node
+  linkType: hard
+
+"@mui/types@npm:^7.2.21":
+  version: 7.2.21
+  resolution: "@mui/types@npm:7.2.21"
+  peerDependencies:
+    "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/c0038ae402a3cfb2805a19167362fb5ac2ca1403f0ef3dad688d1e2276afe757b69d5fb1e3af4cd0e985b9221d287fd863c5b00f29fd07a276c7de9e3423a0f3
   languageName: node
   linkType: hard
 
@@ -777,74 +789,94 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/env@npm:15.1.3"
-  checksum: 10c0/873e7977fe2a4d087f41fa2f9dff957111b88d59631437ab6fc13a11eb6d4ef59aa8109ca80f978389956e4b75b033ff8f68e05e96ce8d9fdcfa977dc90363ae
+"@mui/utils@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "@mui/utils@npm:6.3.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.26.0"
+    "@mui/types": "npm:^7.2.21"
+    "@types/prop-types": "npm:^15.7.14"
+    clsx: "npm:^2.1.1"
+    prop-types: "npm:^15.8.1"
+    react-is: "npm:^19.0.0"
+  peerDependencies:
+    "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
+    react: ^17.0.0 || ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/b111bca7ad065b1028714d55a8df90267c47a72ffb2bfad7a1709cef0d5d9036b463855d431b3606967c9351c7ee23f1dee02457b2f3ed02513744f0173eb00c
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/eslint-plugin-next@npm:15.1.3"
+"@next/env@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/env@npm:15.1.4"
+  checksum: 10c0/88b8e81f97b49abdad40c7ebe5be93b0387d6c138a5c66cc1dce3a9db9d4eac8e258a1b617544ee23085111b5cdc6d5206389596e18c3370ff74cb54e60966f5
+  languageName: node
+  linkType: hard
+
+"@next/eslint-plugin-next@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/eslint-plugin-next@npm:15.1.4"
   dependencies:
     fast-glob: "npm:3.3.1"
-  checksum: 10c0/60e85ad10d0d3afafe6d6e02a70636681b78aacff8bcef2bbe18d77b3192f91ea999bc471d19d22b37abaa3fee72d35299c040b9cce0bc6fd7848d031590abde
+  checksum: 10c0/6b5356275027e7b597914aa410805dab6b988c81c7ec0855e829e967d0064b9512828efc5d3b8826b798b30f1494618c82c5067c36d6d7837071ed670d690eab
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/swc-darwin-arm64@npm:15.1.3"
+"@next/swc-darwin-arm64@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/swc-darwin-arm64@npm:15.1.4"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/swc-darwin-x64@npm:15.1.3"
+"@next/swc-darwin-x64@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/swc-darwin-x64@npm:15.1.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/swc-linux-arm64-gnu@npm:15.1.3"
+"@next/swc-linux-arm64-gnu@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/swc-linux-arm64-gnu@npm:15.1.4"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/swc-linux-arm64-musl@npm:15.1.3"
+"@next/swc-linux-arm64-musl@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/swc-linux-arm64-musl@npm:15.1.4"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/swc-linux-x64-gnu@npm:15.1.3"
+"@next/swc-linux-x64-gnu@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/swc-linux-x64-gnu@npm:15.1.4"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/swc-linux-x64-musl@npm:15.1.3"
+"@next/swc-linux-x64-musl@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/swc-linux-x64-musl@npm:15.1.4"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/swc-win32-arm64-msvc@npm:15.1.3"
+"@next/swc-win32-arm64-msvc@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/swc-win32-arm64-msvc@npm:15.1.4"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@next/swc-win32-x64-msvc@npm:15.1.3"
+"@next/swc-win32-x64-msvc@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@next/swc-win32-x64-msvc@npm:15.1.4"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1933,11 +1965,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:15.1.3":
-  version: 15.1.3
-  resolution: "eslint-config-next@npm:15.1.3"
+"eslint-config-next@npm:15.1.4":
+  version: 15.1.4
+  resolution: "eslint-config-next@npm:15.1.4"
   dependencies:
-    "@next/eslint-plugin-next": "npm:15.1.3"
+    "@next/eslint-plugin-next": "npm:15.1.4"
     "@rushstack/eslint-patch": "npm:^1.10.3"
     "@typescript-eslint/eslint-plugin": "npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0"
     "@typescript-eslint/parser": "npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0"
@@ -1953,7 +1985,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/e9e27f7b4426f57d55ceb107505354ef639afae8b8ec78ead62c7400ef51fe8e572619a61d3da38f0019c5387f7cc184a0ffc7a4c7c499f8020d198403153fa9
+  checksum: 10c0/9c52e8e2c6f71e94eec0a2d2a2ee0a32d6ac3cb6b354e8364ddb8b9942b2b1ea2207c3be1532dfb296a697df27f89f6f3eb86190ecf9ffaf5528d7a3749fb012
   languageName: node
   linkType: hard
 
@@ -3244,11 +3276,11 @@ __metadata:
   dependencies:
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.0"
-    "@mui/lab": "npm:6.0.0-beta.21"
-    "@mui/material": "npm:^6.3.0"
+    "@mui/lab": "npm:6.0.0-beta.22"
+    "@mui/material": "npm:^6.3.1"
     eslint: "npm:^9.17.0"
-    eslint-config-next: "npm:15.1.3"
-    next: "npm:15.1.3"
+    eslint-config-next: "npm:15.1.4"
+    next: "npm:15.1.4"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
   languageName: unknown
@@ -3270,19 +3302,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:15.1.3":
-  version: 15.1.3
-  resolution: "next@npm:15.1.3"
+"next@npm:15.1.4":
+  version: 15.1.4
+  resolution: "next@npm:15.1.4"
   dependencies:
-    "@next/env": "npm:15.1.3"
-    "@next/swc-darwin-arm64": "npm:15.1.3"
-    "@next/swc-darwin-x64": "npm:15.1.3"
-    "@next/swc-linux-arm64-gnu": "npm:15.1.3"
-    "@next/swc-linux-arm64-musl": "npm:15.1.3"
-    "@next/swc-linux-x64-gnu": "npm:15.1.3"
-    "@next/swc-linux-x64-musl": "npm:15.1.3"
-    "@next/swc-win32-arm64-msvc": "npm:15.1.3"
-    "@next/swc-win32-x64-msvc": "npm:15.1.3"
+    "@next/env": "npm:15.1.4"
+    "@next/swc-darwin-arm64": "npm:15.1.4"
+    "@next/swc-darwin-x64": "npm:15.1.4"
+    "@next/swc-linux-arm64-gnu": "npm:15.1.4"
+    "@next/swc-linux-arm64-musl": "npm:15.1.4"
+    "@next/swc-linux-x64-gnu": "npm:15.1.4"
+    "@next/swc-linux-x64-musl": "npm:15.1.4"
+    "@next/swc-win32-arm64-msvc": "npm:15.1.4"
+    "@next/swc-win32-x64-msvc": "npm:15.1.4"
     "@swc/counter": "npm:0.1.3"
     "@swc/helpers": "npm:0.5.15"
     busboy: "npm:1.6.0"
@@ -3327,7 +3359,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 10c0/3450a2277057c74de9bda5390796e7971afb5c7725af8fce43045b4f5d4e4a5752a14a2fa7f78ad4eab523a11c6b147893038f607a9d87a8f7f7bdcd560245b5
+  checksum: 10c0/55325f95e1a8eb13de4ff0f7d7945c130226139bc308950e4fb9002bacae1b3a012bf1488e259027e606cdc460826fa91408e07c79d53c6f69b516b23a4741c5
   languageName: node
   linkType: hard
 
