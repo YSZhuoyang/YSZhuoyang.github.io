@@ -35,11 +35,13 @@ const TabView = () => {
             <Tabs
                 value={tabId}
                 onChange={onTabSwitch}
-                TabIndicatorProps={{
-                    style: {
-                        height:"3px",
-                        background: "#bbbb88"
-                    }
+                slotProps={{
+                    indicator: {
+                        style: {
+                            height: "3px",
+                            background: "#bbbb88",
+                        },
+                    },
                 }}
                 centered
             >
@@ -59,9 +61,5 @@ const TabView = () => {
         </div>
     );
 }
-
-TabView.propTypes = {
-    classes: PropTypes.object.isRequired
-};
 
 export default TabView;
