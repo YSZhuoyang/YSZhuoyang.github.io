@@ -6,8 +6,7 @@ import { PHASE_PRODUCTION_BUILD } from 'next/constants.js';
  */
 export default async (phase) => {
     const repo = 'YSZhuoyang.github.io';
-    const isProd = phase === PHASE_PRODUCTION_BUILD;
-
+    const isProd = process.env.NODE_ENV === 'production';
     const assetPrefix = isProd ? `/${repo}/` : undefined;
     const basePath = isProd ? `/${repo}` : undefined;
 
@@ -15,8 +14,8 @@ export default async (phase) => {
     const nextConfig = {
         output: 'export',
         distDir: 'build',
-        assetPrefix: assetPrefix,
-        basePath: basePath,
+        assetPrefix,
+        basePath,
     };
 
     return nextConfig;
