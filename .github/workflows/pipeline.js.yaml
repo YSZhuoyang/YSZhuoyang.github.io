@@ -31,8 +31,13 @@ jobs:
     - name: Build
       run: yarn build
 
+    # Disable the default Jekyll static site generator
+    # when GitHub builds and deploys a site from a source branch
+    - name: Disable the default Jekyll static site generator
+      run: touch build/.nojekyll
+
     - name: Deploy by moving build dir to master branch
-      uses: s0/git-publish-subdir-action@develop
+      uses: s0/git-publish-subdir-action@master
       env:
         REPO: self
         BRANCH: master
