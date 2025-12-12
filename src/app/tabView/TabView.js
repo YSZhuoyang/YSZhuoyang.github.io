@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
-import PropTypes from "prop-types";
 
 import AboutMe from "../aboutMe/AboutMe";
 import Trace from "../trace/Trace";

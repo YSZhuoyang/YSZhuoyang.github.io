@@ -13,13 +13,13 @@
     "@emotion/styled": "^11.14.1",
     "@mui/lab": "7.0.1-beta.20",
     "@mui/material": "^7.3.6",
-    "next": "16.0.7",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "next": "16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "eslint": "^9.39.1",
-    "eslint-config-next": "16.0.7"
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.0.10"
   },
   "packageManager": "yarn@4.12.0"
 }
