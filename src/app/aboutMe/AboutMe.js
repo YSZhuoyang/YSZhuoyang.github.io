@@ -97,8 +97,8 @@ export default React.memo(function AboutMe() {
         <StyledNameH1 className="fn">Oscar Yu</StyledNameH1>
         <StyledDescriptionP>
           Email:
-          <StyledEmailA href="mailto:sangzhuoyangy@gmail.com">
-            sangzhuoyangy@gmail.com
+          <StyledEmailA href="mailto:oscary.restricted@gmail.com">
+            oscary.restricted@gmail.com
           </StyledEmailA>
         </StyledDescriptionP>
       </div>
